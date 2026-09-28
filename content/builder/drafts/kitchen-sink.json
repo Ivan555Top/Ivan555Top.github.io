@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T11:37:49.446Z",
+  "savedAt": "2026-09-28T11:43:53.803Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -123,6 +123,144 @@
         "version": 1,
         "props": {
           "text": "Нашла ещё одну проблему при ручном тестировании Builder: обычный Text widget ломается при вставке длинного текста. На canvas вместо текста появляется validation error:\nText: Too big: expected string to have <=2000 characters\nУбери такой маленький жёсткий лимит в 2000 символов для обычного Text/Text Editor content. Пользователь должен иметь возможность вставлять длинные тексты, SEO-контент, статьи, Terms, FAQ, описания услуг и т.д.\nСделай разумный высокий технический лимит только для защиты системы, но он не должен мешать нормальному редактированию сайта. Желательно минимум 50,000–100,000 characters для обычного текстового контента, если архитектура хранения это позволяет.\nГлавное: превышение какого-либо лимита не должно ломать widget и заменять его содержимое validation error на canvas. Если существует технический предел, редактор должен заранее показать понятный character counter/warning и не позволить превысить предел либо корректно обработать ситуацию.\nТакже проверь:\n- вставку большого текста из clipboard;\n- много абзацев;\n- переносы строк;\n- списки;\n- ссылки;\n- Unicode/кириллицу;\n- emoji;\n- длинные слова/URL без пробелов;\n- rich text;\n- undo/redo после вставки;\n- Save draft → reopen;\n- Publish → reopen;\n- Desktop/Tablet/Mobile;\n- чтобы длинный текст нормально переносился и никогда не расширял страницу по горизонтали.\nПроверь аналогичные искусственные ограничения во всех текстовых полях Builder. Для коротких полей вроде Button label, Heading, Alt и Anchor разумные ограничения можно оставить, но основной Text/Text Editor не должен иметь лимит 2000 символов.\nИсправление сделай системно на уровне schema/validation/editor/rendering, а не только для этой demo-страницы."
+        }
+      },
+      {
+        "id": "ing-abbd5132-0980-4b3d-a8f5-feba6d4cd755",
+        "type": "base/Heading",
+        "version": 1,
+        "props": {
+          "text": "Section heading",
+          "level": 2
+        }
+      },
+      {
+        "id": "ext-3704ca7d-c22d-49bc-8ae0-6534472ff2e2",
+        "type": "base/Text",
+        "version": 1,
+        "props": {
+          "text": "Сделай responsive-переключатель возле каждого responsive-параметра компактным dropdown, чтобы не перегружать узкую правую панель тремя отдельными иконками.\nНапример:\nSize     🖥 ▼        [60] [px]\nПри нажатии на 🖥 ▼ открывается компактное меню:\n🖥 Desktop\n▯ Tablet\n📱 Mobile\nПосле выбора устройства иконка возле параметра меняется на выбранное устройство, а значение справа показывает и редактирует значение именно этого breakpoint.\nОдновременно автоматически переключай canvas на соответствующий Desktop / Tablet / Mobile preview.\nИ наоборот: если пользователь переключил устройство над canvas, dropdown возле responsive-параметров должен автоматически показывать текущее устройство.\nОбязательно показывай состояние inheritance. Например Desktop = 60 px, Tablet наследует 60 px, Mobile имеет собственные 36 px. Унаследованное значение можно показывать приглушённым и добавить небольшой indicator/tooltip Inherited from Desktop или Inherited from Tablet.\nReset/Clear на Tablet/Mobile должен удалять override и возвращать inheritance, а не устанавливать 0.\nDropdown показывай только у responsive-параметров. Для обычных параметров его быть не должно.\nСделай это единым reusable ResponsiveControl для всего Builder: typography, width/height, margin/padding, gap, border/radius, positioning и других responsive CSS-параметров. Не реализовывай отдельно для каждого widget.\nDropdown должен быть максимально компактным и не увеличивать высоту строки настройки."
+        }
+      },
+      {
+        "id": "ner-f79a5845-8c24-46b1-a347-3e3d0ccc690c",
+        "type": "base/Container",
+        "version": 1,
+        "props": {
+          "contentWidth": "boxed",
+          "tag": "div"
+        },
+        "style": {
+          "desktop": {
+            "flexDirection": "row"
+          },
+          "mobile": {
+            "flexDirection": "column"
+          }
+        },
+        "slots": {
+          "content": [
+            {
+              "id": "ner-fece9536-6196-4a6a-bccd-3485111c1009",
+              "type": "base/Container",
+              "version": 1,
+              "props": {
+                "contentWidth": "full",
+                "tag": "div"
+              },
+              "style": {
+                "desktop": {
+                  "flexGrow": "1",
+                  "flexBasis": "0%"
+                },
+                "mobile": {
+                  "flexBasis": "auto"
+                }
+              },
+              "slots": {
+                "content": [
+                  {
+                    "id": "ext-9ab324d2-dd11-4edd-b573-2e1c6c50f054",
+                    "type": "base/Text",
+                    "version": 1,
+                    "props": {
+                      "text": "Write something useful for your customers."
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ner-0bffb0de-c33d-4a1b-bfc3-49655807ae06",
+              "type": "base/Container",
+              "version": 1,
+              "props": {
+                "contentWidth": "full",
+                "tag": "div"
+              },
+              "style": {
+                "desktop": {
+                  "flexGrow": "1",
+                  "flexBasis": "0%"
+                },
+                "mobile": {
+                  "flexBasis": "auto"
+                }
+              },
+              "slots": {
+                "content": [
+                  {
+                    "id": "ing-9b50f44c-2a25-46b3-a2ba-9a26ad67232f",
+                    "type": "base/Heading",
+                    "version": 1,
+                    "props": {
+                      "text": "Section heading",
+                      "level": 2
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "id": "ner-9b8ae6f8-8bd8-48ec-b955-ece937196538",
+              "type": "base/Container",
+              "version": 1,
+              "props": {
+                "contentWidth": "full",
+                "tag": "div"
+              },
+              "style": {
+                "desktop": {
+                  "flexGrow": "1",
+                  "flexBasis": "0%"
+                },
+                "mobile": {
+                  "flexBasis": "auto"
+                }
+              },
+              "slots": {
+                "content": [
+                  {
+                    "id": "con-f34588fe-0374-40b6-ae1f-1f54174c6f84",
+                    "type": "base/Icon",
+                    "version": 1,
+                    "props": {
+                      "icon": "phone",
+                      "view": "default",
+                      "shape": "rounded",
+                      "size": "lg"
+                    },
+                    "style": {
+                      "desktop": {
+                        "background": "#df8b8b",
+                        "gradientType": "linear"
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         }
       },
       {
@@ -595,7 +733,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T11:37:49.446Z",
+    "updatedAt": "2026-09-28T11:43:53.803Z",
     "updatedBy": "Ivan555Top"
   }
 }
