@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "4200bb4b141d08b1cdb5c4eefbb760c14df158f0",
-  "savedAt": "2026-09-28T14:58:10.885Z",
+  "savedAt": "2026-09-28T14:59:19.045Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -140,8 +140,8 @@
         "version": 1,
         "props": {
           "provider": "google",
-          "address": "Los Angeles, CA",
-          "zoom": 11,
+          "address": "Malibu, CA",
+          "zoom": 16,
           "height": "md",
           "title": "Map"
         }
@@ -903,7 +903,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T14:58:10.885Z",
+    "updatedAt": "2026-09-28T14:59:19.045Z",
     "updatedBy": "Ivan555Top"
   }
 }
