@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:37:46.239Z",
+  "savedAt": "2026-09-28T10:43:31.821Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -138,6 +138,30 @@
         }
       },
       {
+        "id": "ing-5fb350b2-3e79-4f8c-939b-c4ae5c361835",
+        "type": "base/Heading",
+        "version": 1,
+        "props": {
+          "text": "Section heading",
+          "level": 2
+        }
+      },
+      {
+        "id": "ton-6ba98da9-b9ef-4370-b308-b7e31927e05d",
+        "type": "base/Button",
+        "version": 1,
+        "props": {
+          "label": "Get a free estimate",
+          "link": "/contact-us/",
+          "variant": "primary",
+          "size": "md",
+          "shape": "rounded",
+          "icon": "none",
+          "iconPosition": "after",
+          "fullWidth": "no"
+        }
+      },
+      {
         "id": "ing-072b6baf-adb7-4f13-a0f7-6cea611e6254",
         "type": "base/Heading",
         "version": 1,
@@ -149,9 +173,10 @@
           "desktop": {
             "fontFamily": "sans",
             "textSize": "55px",
-            "border": "thin",
-            "borderColor": "ink",
-            "textColor": "#c52b2b"
+            "border": "medium",
+            "borderColor": "#e51fd4",
+            "textColor": "#c52b2b",
+            "background": "#3314d2"
           }
         }
       },
@@ -406,7 +431,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:37:46.239Z",
+    "updatedAt": "2026-09-28T10:43:31.821Z",
     "updatedBy": "Ivan555Top"
   }
 }
