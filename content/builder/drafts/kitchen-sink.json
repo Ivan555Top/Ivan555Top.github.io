@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "4200bb4b141d08b1cdb5c4eefbb760c14df158f0",
-  "savedAt": "2026-09-28T14:07:09.092Z",
+  "savedAt": "2026-09-28T14:09:21.937Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -206,7 +206,8 @@
                 "textColor": "#d12424",
                 "background": "#fdd6d6",
                 "border": "medium",
-                "borderColor": "#714dc6"
+                "borderColor": "#714dc6",
+                "textSize": "24px"
               }
             }
           }
@@ -885,7 +886,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T14:07:09.092Z",
+    "updatedAt": "2026-09-28T14:09:21.937Z",
     "updatedBy": "Ivan555Top"
   }
 }
