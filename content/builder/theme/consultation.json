@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "consultation",
+  "title": "Consultation",
+  "type": "popup",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "page",
+      "value": "/popup-link/"
+    }
+  ],
+  "popup": {
+    "layout": "fullscreen",
+    "triggers": {},
+    "frequency": {
+      "mode": "always"
+    },
+    "animation": "fade",
+    "duration": 200
+  },
+  "root": [
+    {
+      "id": "cn-c",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "div"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "cn-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Book a free consultation",
+              "level": 2
+            }
+          },
+          {
+            "id": "cn-t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Thirty minutes, no obligation."
+            }
+          },
+          {
+            "id": "cn-b",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Go to the contact page",
+              "link": "/contact/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "offer-band",
+  "title": "Offer band",
+  "category": "Call to action",
+  "description": "Headline, text and a button",
+  "node": {
+    "id": "ob",
+    "type": "base/Container",
+    "version": 1,
+    "props": {
+      "contentWidth": "boxed",
+      "tag": "section"
+    },
+    "style": {
+      "desktop": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "space-between",
+        "alignItems": "center",
+        "gap": "24px"
+      },
+      "mobile": {
+        "flexDirection": "column"
+      }
+    },
+    "slots": {
+      "content": [
+        {
+          "id": "ob-h",
+          "type": "base/Heading",
+          "version": 1,
+          "props": {
+            "text": "Spring offer",
+            "level": 2
+          }
+        },
+        {
+          "id": "ob-t",
+          "type": "base/Text",
+          "version": 1,
+          "props": {
+            "text": "Ten percent off every project booked this month."
+          }
+        },
+        {
+          "id": "ob-b",
+          "type": "base/Button",
+          "version": 1,
+          "props": {
+            "label": "Book now",
+            "link": "/kitchen-sink/",
+            "variant": "primary",
+            "size": "md",
+            "shape": "rounded",
+            "icon": "arrow",
+            "iconPosition": "after",
+            "fullWidth": "no"
+          }
+        }
+      ]
+    }
+  }
+}

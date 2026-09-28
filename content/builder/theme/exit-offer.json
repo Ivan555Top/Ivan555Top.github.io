@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "exit-offer",
+  "title": "Exit offer",
+  "type": "popup",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "page",
+      "value": "/popup-exit/"
+    }
+  ],
+  "popup": {
+    "layout": "modal",
+    "position": "center",
+    "size": "small",
+    "triggers": {
+      "exit": true
+    },
+    "frequency": {
+      "mode": "days",
+      "days": 7
+    },
+    "devices": [
+      "desktop"
+    ],
+    "animation": "fade"
+  },
+  "root": [
+    {
+      "id": "eo-c",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "div"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "eo-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Before you go\u2026",
+              "level": 2
+            }
+          },
+          {
+            "id": "eo-t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Get our portfolio as a PDF."
+            }
+          },
+          {
+            "id": "eo-b",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Get it",
+              "link": "/contact/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

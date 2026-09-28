@@ -1,0 +1,242 @@
+{
+  "schemaVersion": 2,
+  "id": "layout",
+  "path": "/layout/",
+  "title": "Layout: containers",
+  "seo": {
+    "description": "Flexbox and grid containers per device."
+  },
+  "root": [
+    {
+      "id": "layout-title",
+      "type": "base/Heading",
+      "version": 1,
+      "props": {
+        "text": "Layout",
+        "level": 1
+      }
+    },
+    {
+      "id": "row",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "narrow",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "h-n",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Narrow column",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "t-n",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "One third of the row."
+                  }
+                }
+              ]
+            },
+            "style": {
+              "desktop": {
+                "flexGrow": "1",
+                "flexBasis": "0%",
+                "paddingTop": "24px",
+                "paddingRight": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "background": "white",
+                "radius": "12px"
+              },
+              "mobile": {
+                "flexBasis": "auto"
+              }
+            }
+          },
+          {
+            "id": "wide",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "h-w",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Wide column",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "t-w",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Two thirds of the row; first on mobile."
+                  }
+                }
+              ]
+            },
+            "style": {
+              "desktop": {
+                "flexGrow": "2",
+                "flexBasis": "0%",
+                "paddingTop": "24px",
+                "paddingRight": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "background": "white",
+                "radius": "12px"
+              },
+              "mobile": {
+                "flexBasis": "auto",
+                "order": "first"
+              }
+            }
+          }
+        ]
+      },
+      "style": {
+        "desktop": {
+          "flexDirection": "row",
+          "gap": "32px",
+          "marginTop": "40px"
+        },
+        "mobile": {
+          "flexDirection": "column",
+          "gap": "16px"
+        }
+      }
+    },
+    {
+      "id": "grid",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "div"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "g1",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Grid cell 1"
+            }
+          },
+          {
+            "id": "g2",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Grid cell 2"
+            }
+          },
+          {
+            "id": "g3",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Grid cell 3"
+            }
+          },
+          {
+            "id": "g4",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Grid cell 4"
+            }
+          },
+          {
+            "id": "g5",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Grid cell 5"
+            }
+          },
+          {
+            "id": "g6",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Grid cell 6"
+            }
+          }
+        ]
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "3",
+          "gap": "16px",
+          "marginTop": "40px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      }
+    },
+    {
+      "id": "center",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "div"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "h-c",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Centred in 200px",
+              "level": 2
+            }
+          }
+        ]
+      },
+      "style": {
+        "desktop": {
+          "justifyContent": "center",
+          "alignItems": "center",
+          "minHeight": "200px",
+          "marginTop": "40px",
+          "background": "brand",
+          "textColor": "white"
+        }
+      }
+    }
+  ]
+}

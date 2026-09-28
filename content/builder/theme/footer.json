@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "footer",
+  "title": "Site footer",
+  "type": "footer",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "site"
+    }
+  ],
+  "root": [
+    {
+      "id": "footer-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "footer"
+      },
+      "style": {
+        "desktop": {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "gap": "16px",
+          "paddingTop": "16px",
+          "paddingBottom": "16px",
+          "background": "soft",
+          "marginTop": "48px"
+        }
+      },
+      "advanced": {
+        "attributes": {
+          "data-part": "site-footer"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "footer-copy",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "\u00a9 Demo Studio"
+            }
+          },
+          {
+            "id": "footer-made",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Built with the visual builder"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

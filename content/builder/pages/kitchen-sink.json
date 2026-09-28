@@ -1,0 +1,322 @@
+{
+  "schemaVersion": 2,
+  "id": "kitchen-sink",
+  "path": "/kitchen-sink/",
+  "title": "All widgets",
+  "seo": {
+    "title": "All widgets",
+    "description": "Regression fixture: every base widget."
+  },
+  "root": [
+    {
+      "id": "sec",
+      "type": "base/Section",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "backgroundImage": {
+          "src": "/images/uploads/demo/demo-1.png",
+          "alt": "Purple gradient"
+        },
+        "overlay": "dark",
+        "minHeight": "small",
+        "verticalAlign": "center"
+      },
+      "style": {
+        "desktop": {
+          "textColor": "white"
+        }
+      },
+      "advanced": {
+        "entrance": "fade-up"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "sh",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Section with a background photo",
+              "level": 1
+            }
+          },
+          {
+            "id": "sb",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Open the popup",
+              "link": "#popup-hello",
+              "variant": "primary",
+              "icon": "arrow",
+              "size": "lg"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "h1",
+      "type": "base/Heading",
+      "version": 1,
+      "props": {
+        "text": "Typography",
+        "level": 2
+      }
+    },
+    {
+      "id": "t1",
+      "type": "base/Text",
+      "version": 1,
+      "props": {
+        "text": "Text with custom typography.\n\nSecond paragraph."
+      },
+      "style": {
+        "desktop": {
+          "fontFamily": "serif",
+          "textSize": "lg",
+          "letterSpacing": "wide"
+        },
+        "mobile": {
+          "textSize": "md"
+        }
+      }
+    },
+    {
+      "id": "img",
+      "type": "base/Image",
+      "version": 1,
+      "props": {
+        "image": {
+          "src": "/images/uploads/demo/demo-2.png",
+          "alt": "Blue gradient",
+          "width": 800,
+          "height": 600
+        },
+        "size": "medium",
+        "caption": "An image"
+      }
+    },
+    {
+      "id": "gal",
+      "type": "base/Gallery",
+      "version": 1,
+      "props": {
+        "images": [
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-1.png",
+              "alt": "Gradient 1"
+            },
+            "caption": "Photo 1"
+          },
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-2.png",
+              "alt": "Gradient 2"
+            },
+            "caption": "Photo 2"
+          },
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-3.png",
+              "alt": "Gradient 3"
+            },
+            "caption": "Photo 3"
+          },
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-4.png",
+              "alt": "Gradient 4"
+            },
+            "caption": "Photo 4"
+          }
+        ],
+        "layout": "grid",
+        "columns": 4,
+        "columnsTablet": 2,
+        "columnsMobile": 1,
+        "gap": "md",
+        "aspect": "landscape",
+        "hover": "zoom",
+        "captions": "below",
+        "lightbox": true
+      }
+    },
+    {
+      "id": "car",
+      "type": "base/Carousel",
+      "version": 1,
+      "props": {
+        "slides": [
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-1.png",
+              "alt": "Slide 1"
+            },
+            "title": "Slide 1"
+          },
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-2.png",
+              "alt": "Slide 2"
+            },
+            "title": "Slide 2"
+          },
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-3.png",
+              "alt": "Slide 3"
+            },
+            "title": "Slide 3"
+          }
+        ],
+        "perView": 2,
+        "perViewTablet": 1,
+        "perViewMobile": 1,
+        "aspect": "wide",
+        "captions": "overlay",
+        "autoplay": "off",
+        "loop": true,
+        "arrows": true,
+        "dots": true,
+        "gap": "md"
+      }
+    },
+    {
+      "id": "acc",
+      "type": "base/Accordion",
+      "version": 1,
+      "props": {
+        "items": [
+          {
+            "title": "First question",
+            "body": "First answer"
+          },
+          {
+            "title": "Second question",
+            "body": "Second answer"
+          }
+        ],
+        "design": "cards",
+        "icon": "chevron",
+        "iconPosition": "right",
+        "oneAtATime": true,
+        "openFirst": true
+      }
+    },
+    {
+      "id": "tabs",
+      "type": "base/Tabs",
+      "version": 1,
+      "props": {
+        "tabs": [
+          {
+            "title": "One"
+          },
+          {
+            "title": "Two"
+          }
+        ],
+        "design": "pills",
+        "position": "top",
+        "align": "start"
+      },
+      "slots": {
+        "tab1": [
+          {
+            "id": "tt1",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Content of tab one"
+            }
+          }
+        ],
+        "tab2": [
+          {
+            "id": "tt2",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Content of tab two"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "nacc",
+      "type": "base/NestedAccordion",
+      "version": 1,
+      "props": {
+        "items": [
+          {
+            "title": "Panel with a button"
+          }
+        ],
+        "design": "lines",
+        "icon": "plus",
+        "iconPosition": "right",
+        "oneAtATime": false,
+        "openFirst": true
+      },
+      "slots": {
+        "panel1": [
+          {
+            "id": "nb",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Inside a panel",
+              "link": "/kitchen-sink/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "div",
+      "type": "base/Divider",
+      "version": 1,
+      "props": {
+        "style": "dashed"
+      }
+    },
+    {
+      "id": "sp",
+      "type": "base/Spacer",
+      "version": 1,
+      "props": {
+        "size": "small"
+      }
+    },
+    {
+      "id": "pop",
+      "type": "base/Popup",
+      "version": 1,
+      "props": {
+        "name": "hello",
+        "trigger": "click",
+        "frequency": "always",
+        "position": "center",
+        "size": "small"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "ph",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Hello from the popup",
+              "level": 3
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

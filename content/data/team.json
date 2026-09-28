@@ -1,0 +1,6 @@
+{
+  "people": [
+    { "id": "ana", "name": "Ana Ruiz", "role": "Designer", "salary": 1 },
+    { "id": "ben", "name": "Ben Ode", "role": "Developer", "salary": 2 }
+  ]
+}

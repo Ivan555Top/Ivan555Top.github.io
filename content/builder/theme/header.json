@@ -1,0 +1,21 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "header",
+  "title": "Site header",
+  "type": "header",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "site"
+    }
+  ],
+  "root": [
+    {
+      "id": "site-header",
+      "type": "demo/SiteHeader",
+      "version": 1,
+      "props": {}
+    }
+  ]
+}

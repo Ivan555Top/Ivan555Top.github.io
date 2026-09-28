@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "id": "popup-load",
+  "path": "/popup-load/",
+  "title": "Popup: page load",
+  "seo": {
+    "noindex": true
+  },
+  "root": [
+    {
+      "id": "popup-load-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "pl-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "A top bar opens with the page",
+              "level": 2
+            }
+          },
+          {
+            "id": "pl-t0",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+            }
+          },
+          {
+            "id": "pl-t1",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

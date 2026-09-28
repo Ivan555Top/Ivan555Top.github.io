@@ -1,0 +1,58 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "promo-bar",
+  "title": "Promo bar",
+  "type": "popup",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "page",
+      "value": "/popup-load/"
+    }
+  ],
+  "popup": {
+    "layout": "top-bar",
+    "triggers": {
+      "load": true
+    },
+    "frequency": {
+      "mode": "always"
+    },
+    "animation": "slide-down",
+    "duration": 250
+  },
+  "root": [
+    {
+      "id": "pb-c",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "div"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "pb-t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Autumn offer: 10% off every project this month."
+            }
+          },
+          {
+            "id": "pb-b",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "See the offer",
+              "link": "/blog/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

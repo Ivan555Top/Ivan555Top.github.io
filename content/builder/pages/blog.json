@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 2,
+  "id": "blog",
+  "path": "/blog/",
+  "title": "Blog",
+  "seo": {
+    "description": "Notes from Demo Studio."
+  },
+  "root": [
+    {
+      "id": "blog-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "blog-title",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Blog",
+              "level": 1
+            },
+            "bindings": {
+              "text": {
+                "tag": "page.title"
+              }
+            }
+          },
+          {
+            "id": "blog-latest",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Latest posts",
+              "level": 2
+            }
+          },
+          {
+            "id": "blog-loop",
+            "type": "builder/Loop",
+            "version": 1,
+            "props": {
+              "template": "post-card",
+              "collection": "posts",
+              "sort": {
+                "field": "date",
+                "dir": "desc"
+              },
+              "perPage": 3,
+              "layout": "grid",
+              "columns": {
+                "desktop": 3,
+                "tablet": 2,
+                "mobile": 1
+              },
+              "gap": "sm",
+              "label": "Blog posts",
+              "empty": "No posts yet."
+            }
+          },
+          {
+            "id": "blog-design",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Design notes",
+              "level": 2
+            }
+          },
+          {
+            "id": "blog-carousel",
+            "type": "builder/Loop",
+            "version": 1,
+            "props": {
+              "template": "post-card",
+              "collection": "posts",
+              "filters": [
+                {
+                  "field": "category",
+                  "op": "eq",
+                  "value": "design"
+                }
+              ],
+              "sort": {
+                "field": "date",
+                "dir": "desc"
+              },
+              "layout": "carousel",
+              "columns": {
+                "desktop": 3,
+                "tablet": 2,
+                "mobile": 1
+              },
+              "gap": "sm",
+              "label": "Design notes"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

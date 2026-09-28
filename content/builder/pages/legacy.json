@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "legacy",
+  "path": "/legacy/",
+  "title": "Legacy page",
+  "seo": {
+    "title": "Legacy page"
+  },
+  "root": [
+    {
+      "id": "old",
+      "type": "demo/Hero",
+      "version": 1,
+      "props": {
+        "heading": "Saved by an older version",
+        "subtitle": "Upgraded at build time."
+      }
+    }
+  ]
+}

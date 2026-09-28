@@ -1,0 +1,61 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "scroll-slide",
+  "title": "Scroll slide-in",
+  "type": "popup",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "page",
+      "value": "/popup-scroll/"
+    }
+  ],
+  "popup": {
+    "layout": "slide-in",
+    "position": "bottom-right",
+    "size": "small",
+    "triggers": {
+      "scroll": 50
+    },
+    "frequency": {
+      "mode": "session"
+    },
+    "animation": "slide-left",
+    "duration": 300
+  },
+  "root": [
+    {
+      "id": "ss-c",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "div"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "ss-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Enjoying the read?",
+              "level": 2
+            }
+          },
+          {
+            "id": "ss-b",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Subscribe",
+              "link": "/contact/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

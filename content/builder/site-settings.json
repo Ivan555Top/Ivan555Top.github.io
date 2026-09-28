@@ -1,0 +1,22 @@
+{
+  "kind": "builder/site-settings",
+  "version": 1,
+  "colors": {
+    "brand": { "label": "Brand", "value": "#7c3aed", "cssVar": "--demo-brand" },
+    "soft": { "label": "Soft", "value": "#f5f3ff", "cssVar": "--demo-soft" },
+    "ink": { "label": "Ink", "value": "#1f2937" },
+    "text": { "label": "Text", "value": "#374151" },
+    "white": { "label": "White", "value": "#ffffff" }
+  },
+  "roles": { "primary": "ink", "secondary": "soft", "text": "text", "accent": "brand" },
+  "typography": {
+    "primary": { "label": "Primary (headings)", "font": "sans", "weight": "bold", "size": { "desktop": "2.5rem", "mobile": "1.75rem" }, "lineHeight": { "desktop": "tight" } },
+    "secondary": { "label": "Secondary", "font": "serif", "size": { "desktop": "1.5rem" }, "style": "italic" },
+    "text": { "label": "Text", "font": "sans", "size": { "desktop": "1rem" }, "lineHeight": { "desktop": "relaxed" } },
+    "accent": { "label": "Accent (labels)", "font": "sans", "weight": "semibold", "size": { "desktop": "0.875rem" }, "letterSpacing": { "desktop": "wider" }, "transform": "uppercase" }
+  },
+  "elements": {
+    "link": { "color": "brand", "stateColor": "ink" }
+  },
+  "layout": { "contentWidth": "72rem", "gutter": "1rem" }
+}

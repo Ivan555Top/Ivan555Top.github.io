@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 2,
+  "id": "effects",
+  "path": "/effects/",
+  "title": "Effects and states",
+  "seo": {
+    "description": "Gradients, overlays, shadows, transforms, hover and focus states."
+  },
+  "root": [
+    {
+      "id": "hero",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "bgImage": "/images/uploads/demo/demo-2.png",
+          "bgSize": "cover",
+          "bgPosition": "50% 30%",
+          "overlayColor": "ink",
+          "overlayOpacity": "40",
+          "textColor": "white",
+          "minHeight": "260px",
+          "justifyContent": "center",
+          "alignItems": "center",
+          "paddingTop": "48px",
+          "paddingBottom": "48px"
+        },
+        "mobile": {
+          "overlayOpacity": "60"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "hero-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Effects and states",
+              "level": 1
+            },
+            "style": {
+              "desktop": {
+                "textShadow": "md"
+              }
+            }
+          },
+          {
+            "id": "cta",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Hover me",
+              "link": "/kitchen-sink/",
+              "variant": "primary",
+              "size": "lg",
+              "shape": "pill",
+              "icon": "arrow",
+              "iconPosition": "after",
+              "fullWidth": "no"
+            },
+            "parts": {
+              "button": {
+                "style": {
+                  "desktop": {
+                    "background": "white",
+                    "textColor": "ink",
+                    "transitionDuration": "200"
+                  }
+                },
+                "hover": {
+                  "desktop": {
+                    "background": "brand",
+                    "textColor": "white",
+                    "translateY": "-3px"
+                  }
+                },
+                "focus": {
+                  "desktop": {
+                    "boxShadow": "0 0 0 4px brand/40"
+                  }
+                }
+              }
+            },
+            "advanced": {
+              "attributes": {
+                "data-track": "hero-cta",
+                "aria-label": "Open the widget page"
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cards",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "div"
+      },
+      "style": {
+        "desktop": {
+          "flexDirection": "row",
+          "gap": "24px",
+          "marginTop": "40px"
+        },
+        "mobile": {
+          "flexDirection": "column"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "card1",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "flexGrow": "1",
+                "flexBasis": "0%",
+                "paddingTop": "24px",
+                "paddingRight": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "radius": "16px",
+                "boxShadow": "0 8px 24px -8px ink/25, 0 0 0 1px ink/10",
+                "transitionDuration": "250",
+                "gradientFrom": "white",
+                "gradientTo": "soft",
+                "gradientAngle": "160"
+              },
+              "mobile": {
+                "flexBasis": "auto"
+              }
+            },
+            "states": {
+              "hover": {
+                "desktop": {
+                  "boxShadow": "0 20px 40px -12px ink/35",
+                  "translateY": "-6px"
+                }
+              }
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "c1h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Hover state",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "c1t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Shadow and position change on hover, with a transition."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "card2",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "flexGrow": "1",
+                "flexBasis": "0%",
+                "paddingTop": "24px",
+                "paddingRight": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px"
+              },
+              "mobile": {
+                "flexBasis": "auto"
+              }
+            },
+            "advanced": {
+              "classes": [
+                "demo-card"
+              ],
+              "hoverAnimation": "grow"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "c2h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Site class + grow",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "c2t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Styled by the site's own class; grows on hover."
+                  },
+                  "advanced": {
+                    "classes": [
+                      "demo-muted"
+                    ]
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "card3",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "flexGrow": "1",
+                "flexBasis": "0%",
+                "paddingTop": "24px",
+                "paddingRight": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "background": "soft",
+                "rotate": "-2"
+              },
+              "mobile": {
+                "flexBasis": "auto",
+                "rotate": "0"
+              }
+            },
+            "advanced": {
+              "customCss": "selector { outline: 2px dashed currentColor; outline-offset: -8px } selector:hover h3 { letter-spacing: .05em }"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "c3h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Custom CSS",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "c3t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Scoped to this element; rotated on desktop."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "news",
+      "type": "demo/Newsletter",
+      "version": 1,
+      "props": {
+        "label": "Get the newsletter",
+        "button": "Subscribe"
+      },
+      "parts": {
+        "field": {
+          "focus": {
+            "desktop": {
+              "borderColor": "brand",
+              "boxShadow": "0 0 0 3px brand/30"
+            }
+          }
+        },
+        "button": {
+          "hover": {
+            "desktop": {
+              "background": "ink"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "photo",
+      "type": "base/Image",
+      "version": 1,
+      "props": {
+        "image": {
+          "src": "/images/uploads/demo/demo-3.png",
+          "alt": "Teal gradient",
+          "width": 800,
+          "height": 600
+        },
+        "size": "medium"
+      },
+      "parts": {
+        "image": {
+          "style": {
+            "desktop": {
+              "transitionDuration": "400"
+            }
+          },
+          "hover": {
+            "desktop": {
+              "scale": "108",
+              "opacity": "85"
+            }
+          }
+        }
+      }
+    },
+    {
+      "id": "crop",
+      "type": "base/Image",
+      "version": 1,
+      "props": {
+        "image": {
+          "src": "/images/uploads/builder/2026/09/sample-photo.png",
+          "alt": "Sample photo cropped to 16:9",
+          "width": 800,
+          "height": 600,
+          "focal": {
+            "x": 20,
+            "y": 80
+          }
+        },
+        "size": "large",
+        "ratio": "16:9",
+        "fit": "cover"
+      }
+    }
+  ]
+}

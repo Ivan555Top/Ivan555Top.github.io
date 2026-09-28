@@ -1,0 +1,163 @@
+{
+  "schemaVersion": 2,
+  "id": "dynamic",
+  "path": "/dynamic/",
+  "title": "Dynamic content",
+  "seo": {
+    "description": "Values from the page, the site's info and a data collection."
+  },
+  "root": [
+    {
+      "id": "dyn-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "dyn-title",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Typed title",
+              "level": 1
+            },
+            "bindings": {
+              "text": {
+                "tag": "page.title"
+              }
+            }
+          },
+          {
+            "id": "dyn-desc",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Typed description"
+            },
+            "bindings": {
+              "text": {
+                "tag": "page.field",
+                "params": {
+                  "key": "description"
+                }
+              }
+            }
+          },
+          {
+            "id": "dyn-phone",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Call us"
+            },
+            "bindings": {
+              "text": {
+                "tag": "site.field",
+                "params": {
+                  "key": "phone"
+                },
+                "before": "Call us: "
+              }
+            }
+          },
+          {
+            "id": "dyn-hours",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Hours"
+            },
+            "bindings": {
+              "text": {
+                "tag": "site.field",
+                "params": {
+                  "key": "hours"
+                },
+                "before": "Open ",
+                "fallback": "Open daily"
+              }
+            }
+          },
+          {
+            "id": "dyn-call",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Call now",
+              "link": "/contact/",
+              "variant": "primary"
+            },
+            "bindings": {
+              "link": {
+                "tag": "site.field",
+                "params": {
+                  "key": "phoneLink"
+                }
+              },
+              "label": {
+                "tag": "site.field",
+                "params": {
+                  "key": "phone"
+                },
+                "before": "Call "
+              }
+            }
+          },
+          {
+            "id": "dyn-team",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Our designer"
+            },
+            "bindings": {
+              "text": {
+                "tag": "data.field",
+                "params": {
+                  "collection": "team",
+                  "id": "ana",
+                  "field": "name"
+                },
+                "after": " designs our pages"
+              }
+            }
+          },
+          {
+            "id": "dyn-missing",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Typed value stays when the data is empty"
+            },
+            "bindings": {
+              "text": {
+                "tag": "page.author"
+              }
+            }
+          },
+          {
+            "id": "dyn-year",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Updated recently"
+            },
+            "bindings": {
+              "text": {
+                "tag": "date.now",
+                "params": {
+                  "format": "year"
+                },
+                "before": "Updated in "
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

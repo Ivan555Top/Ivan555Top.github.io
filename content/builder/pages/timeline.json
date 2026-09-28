@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 2,
+  "id": "timeline",
+  "path": "/timeline/",
+  "title": "A third-party widget",
+  "seo": {
+    "description": "The Timeline widget comes from its own package: one file with its fields, styles, validation, migrations and render."
+  },
+  "root": [
+    {
+      "id": "tl-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": { "contentWidth": "boxed", "tag": "section" },
+      "slots": {
+        "content": [
+          { "id": "tl-h1", "type": "base/Heading", "version": 1, "props": { "text": "A widget from another package", "level": 1 } },
+          { "id": "tl-intro", "type": "base/Text", "version": 1, "props": { "text": "The Timeline below is not part of the builder: it is one file in examples/widget-timeline, added to this site with one line." } },
+          {
+            "id": "tl-steps",
+            "type": "acme/Timeline",
+            "version": 1,
+            "props": { "title": "Stored as version 1", "layout": "horizontal", "numbered": true, "steps": [{ "heading": "Install the package", "text": "Add it to the site's dependencies." }, { "heading": "Add one line", "text": "List it in builder.config.ts." }, { "heading": "Use it", "text": "It is in the widget panel with its controls." }] }
+          }
+        ]
+      }
+    }
+  ]
+}

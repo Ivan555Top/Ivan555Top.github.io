@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "welcome",
+  "title": "Welcome",
+  "type": "popup",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "page",
+      "value": "/popup-link/"
+    }
+  ],
+  "popup": {
+    "layout": "modal",
+    "position": "center",
+    "size": "medium",
+    "triggers": {
+      "delay": 1
+    },
+    "frequency": {
+      "mode": "once"
+    },
+    "visitors": "new",
+    "animation": "zoom",
+    "duration": 300
+  },
+  "root": [
+    {
+      "id": "wl-c",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "div"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "wl-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Welcome to Demo Studio",
+              "level": 2
+            }
+          },
+          {
+            "id": "wl-t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "First time here? Have a look at our work."
+            }
+          },
+          {
+            "id": "wl-b1",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "See our work",
+              "link": "/kitchen-sink/",
+              "variant": "primary"
+            }
+          },
+          {
+            "id": "wl-b2",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Contact us",
+              "link": "/contact/",
+              "variant": "primary"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

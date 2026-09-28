@@ -1,0 +1,720 @@
+{
+  "schemaVersion": 2,
+  "id": "motion",
+  "path": "/motion/",
+  "title": "Motion effects",
+  "seo": {
+    "description": "Entrance animations, scrolling effects and mouse effects."
+  },
+  "root": [
+    {
+      "id": "intro",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "minHeight": "100vh",
+          "justifyContent": "center"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "intro-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Motion effects",
+              "level": 1
+            }
+          },
+          {
+            "id": "intro-t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Scroll down: the blocks below animate as they come into view."
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "entr",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "3",
+          "gap": "24px",
+          "marginTop": "32px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "e-fade-up",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "entrance": "fade-up"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "e-fade-up-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Fade in up",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "e-fade-up-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Entrance, default length."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "e-bounce",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "entrance": "bounce",
+              "entranceDuration": 1200
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "e-bounce-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Bounce in",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "e-bounce-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Entrance, 1200 ms."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "e-flip",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "entrance": "flip-x",
+              "entranceDelay": 300
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "e-flip-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Flip",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "e-flip-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Entrance, 300 ms delay."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "e-slide",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "entrance": "slide-left"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "e-slide-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Slide in from left",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "e-slide-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Entrance."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "e-zoom-out",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "entrance": "zoom-out"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "e-zoom-out-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Zoom out",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "e-zoom-out-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Entrance."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "e-speed",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "entrance": "light-speed"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "e-speed-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Light speed",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "e-speed-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Entrance."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "scroll",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "3",
+          "gap": "24px",
+          "marginTop": "32px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "s-move",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "scrollEffects": {
+                "vertical": {
+                  "direction": "up",
+                  "speed": 4
+                },
+                "rotate": {
+                  "direction": "right",
+                  "speed": 2
+                }
+              }
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "s-move-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Vertical and rotate",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "s-move-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Scrolling effects, whole screen."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "s-fade",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "scrollEffects": {
+                "opacity": {
+                  "mode": "in-out",
+                  "level": 8
+                },
+                "blur": {
+                  "mode": "in-out",
+                  "level": 4
+                },
+                "start": 10,
+                "end": 90
+              }
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "s-fade-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Transparency and blur",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "s-fade-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "In, then out; 10–90 % of the screen."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "s-scale",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "scrollEffects": {
+                "scale": {
+                  "mode": "up",
+                  "speed": 5
+                },
+                "on": [
+                  "desktop"
+                ]
+              }
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "s-scale-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Scale (desktop only)",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "s-scale-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Grows to full size while scrolling in."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "mouse",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "3",
+          "gap": "24px",
+          "marginTop": "32px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "m-track",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "mouseEffects": {
+                "track": {
+                  "direction": "opposite",
+                  "speed": 4
+                }
+              }
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "m-track-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Mouse track",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "m-track-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Moves opposite to the pointer."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "m-tilt",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "mouseEffects": {
+                "tilt": {
+                  "direction": "direct",
+                  "speed": 5
+                }
+              }
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "m-tilt-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "3D tilt",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "m-tilt-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Tilts toward the pointer."
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "id": "m-hover",
+            "type": "base/Container",
+            "version": 1,
+            "props": {
+              "contentWidth": "full",
+              "tag": "div"
+            },
+            "style": {
+              "desktop": {
+                "background": "soft",
+                "paddingTop": "24px",
+                "paddingBottom": "24px",
+                "paddingLeft": "24px",
+                "paddingRight": "24px",
+                "radius": "lg"
+              }
+            },
+            "advanced": {
+              "hoverAnimation": "wobble-horizontal"
+            },
+            "slots": {
+              "content": [
+                {
+                  "id": "m-hover-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Hover: wobble",
+                    "level": 2
+                  }
+                },
+                {
+                  "id": "m-hover-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Point at it."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "outro",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "minHeight": "100vh",
+          "justifyContent": "center"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "outro-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "That's all",
+              "level": 2
+            }
+          },
+          {
+            "id": "outro-t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Scroll down: the blocks below animate as they come into view."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

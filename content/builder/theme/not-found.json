@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "not-found",
+  "title": "404 page",
+  "type": "404",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "site"
+    }
+  ],
+  "root": [
+    {
+      "id": "nf-title",
+      "type": "base/Heading",
+      "version": 1,
+      "props": {
+        "text": "Page not found",
+        "level": 1
+      }
+    },
+    {
+      "id": "content",
+      "type": "builder/Content",
+      "version": 1,
+      "props": {}
+    },
+    {
+      "id": "nf-home",
+      "type": "base/Button",
+      "version": 1,
+      "props": {
+        "label": "Go to the home page",
+        "link": "/",
+        "variant": "primary"
+      }
+    }
+  ]
+}

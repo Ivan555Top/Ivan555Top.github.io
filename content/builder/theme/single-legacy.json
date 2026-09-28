@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "single-legacy",
+  "title": "Legacy page layout",
+  "type": "single",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "page",
+      "value": "/legacy/"
+    }
+  ],
+  "root": [
+    {
+      "id": "crumbs",
+      "type": "pro/Breadcrumbs",
+      "version": 1,
+      "props": {
+        "homeLabel": "Home",
+        "separator": "\u203a"
+      },
+      "style": {
+        "desktop": {
+          "spaceTop": "md"
+        }
+      }
+    },
+    {
+      "id": "content",
+      "type": "builder/Content",
+      "version": 1,
+      "props": {}
+    },
+    {
+      "id": "single-more",
+      "type": "base/Button",
+      "version": 1,
+      "props": {
+        "label": "See every page",
+        "link": "/pages/",
+        "variant": "outline"
+      }
+    }
+  ]
+}

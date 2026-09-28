@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "search",
+  "title": "Search results",
+  "type": "search",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "site"
+    }
+  ],
+  "root": [
+    {
+      "id": "search-title",
+      "type": "base/Heading",
+      "version": 1,
+      "props": {
+        "text": "Search the site",
+        "level": 1
+      }
+    },
+    {
+      "id": "search-box",
+      "type": "pro/Search",
+      "version": 1,
+      "props": {
+        "placeholder": "Search the site",
+        "label": "Search",
+        "limit": 8
+      }
+    }
+  ]
+}

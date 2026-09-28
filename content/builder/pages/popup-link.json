@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 2,
+  "id": "popup-link",
+  "path": "/popup-link/",
+  "title": "Popup: link and delay",
+  "seo": {
+    "noindex": true
+  },
+  "root": [
+    {
+      "id": "popup-link-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "pk-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Popups opened by a link or after a delay",
+              "level": 2
+            }
+          },
+          {
+            "id": "pk-b",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Book a consultation",
+              "link": "#popup-consultation",
+              "variant": "primary"
+            }
+          },
+          {
+            "id": "pk-t0",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+            }
+          },
+          {
+            "id": "pk-t1",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

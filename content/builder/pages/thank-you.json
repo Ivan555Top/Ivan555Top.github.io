@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "id": "thank-you",
+  "path": "/thank-you/",
+  "title": "Thank you",
+  "seo": {
+    "noindex": true
+  },
+  "root": [
+    {
+      "id": "ty-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "ty-title",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Thank you \u2014 we'll call you soon",
+              "level": 2
+            }
+          },
+          {
+            "id": "ty-text",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Your request has reached the studio."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

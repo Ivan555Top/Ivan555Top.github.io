@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "archive",
+  "title": "Archive",
+  "type": "archive",
+  "conditions": [
+    {
+      "include": true,
+      "rule": "site"
+    }
+  ],
+  "root": [
+    {
+      "id": "archive-title",
+      "type": "base/Heading",
+      "version": 1,
+      "props": {
+        "text": "All pages",
+        "level": 1
+      }
+    },
+    {
+      "id": "content",
+      "type": "builder/Content",
+      "version": 1,
+      "props": {}
+    }
+  ]
+}

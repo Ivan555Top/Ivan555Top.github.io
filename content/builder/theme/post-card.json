@@ -1,0 +1,128 @@
+{
+  "schemaVersion": 1,
+  "kind": "theme",
+  "id": "post-card",
+  "title": "Post card",
+  "type": "loop-item",
+  "collection": "posts",
+  "conditions": [],
+  "root": [
+    {
+      "id": "card",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "full",
+        "tag": "article"
+      },
+      "style": {
+        "desktop": {
+          "background": "soft",
+          "radius": "lg",
+          "paddingTop": "0px",
+          "paddingBottom": "16px"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "card-img",
+            "type": "base/Image",
+            "version": 1,
+            "props": {
+              "image": {
+                "src": "/images/uploads/demo/demo-1.png",
+                "alt": "Post photo"
+              },
+              "size": "full",
+              "ratio": "16:9",
+              "fit": "cover"
+            },
+            "bindings": {
+              "image": {
+                "tag": "item.field",
+                "params": {
+                  "field": "image"
+                }
+              },
+              "link": {
+                "tag": "item.field",
+                "params": {
+                  "field": "url"
+                }
+              }
+            }
+          },
+          {
+            "id": "card-date",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Date"
+            },
+            "bindings": {
+              "text": {
+                "tag": "item.field",
+                "params": {
+                  "field": "date",
+                  "format": "long"
+                }
+              }
+            }
+          },
+          {
+            "id": "card-title",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Post title",
+              "level": 3
+            },
+            "bindings": {
+              "text": {
+                "tag": "item.field",
+                "params": {
+                  "field": "title"
+                }
+              }
+            }
+          },
+          {
+            "id": "card-excerpt",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Excerpt"
+            },
+            "bindings": {
+              "text": {
+                "tag": "item.field",
+                "params": {
+                  "field": "excerpt"
+                }
+              }
+            }
+          },
+          {
+            "id": "card-more",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Read the post",
+              "link": "/blog/",
+              "variant": "link"
+            },
+            "bindings": {
+              "link": {
+                "tag": "item.field",
+                "params": {
+                  "field": "url"
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

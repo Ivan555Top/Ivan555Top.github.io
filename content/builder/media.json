@@ -1,0 +1,22 @@
+{
+  "kind": "builder/media",
+  "version": 1,
+  "folders": [
+    "Samples"
+  ],
+  "items": {
+    "/images/uploads/builder/2026/09/sample-photo.png": {
+      "title": "Sample photo",
+      "alt": "Sample photo",
+      "folder": "Samples",
+      "width": 800,
+      "height": 600
+    },
+    "/images/uploads/builder/lottie/2026/09/spinner.json": {
+      "title": "Spinner animation",
+      "folder": "Samples",
+      "width": 200,
+      "height": 200
+    }
+  }
+}

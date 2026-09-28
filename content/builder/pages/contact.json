@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 2,
+  "id": "contact",
+  "path": "/contact/",
+  "title": "Contact",
+  "seo": {
+    "description": "Tell us about your project."
+  },
+  "root": [
+    {
+      "id": "contact-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "contact-title",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Start a project",
+              "level": 1
+            }
+          },
+          {
+            "id": "contact-form",
+            "type": "pro/Form",
+            "version": 1,
+            "props": {
+              "fields": [
+                {
+                  "type": "text",
+                  "label": "Your name",
+                  "name": "name",
+                  "required": true,
+                  "width": "half"
+                },
+                {
+                  "type": "email",
+                  "label": "Email",
+                  "name": "email",
+                  "required": true,
+                  "width": "half",
+                  "help": "We reply within one working day."
+                },
+                {
+                  "type": "tel",
+                  "label": "Phone",
+                  "name": "phone",
+                  "width": "half"
+                },
+                {
+                  "type": "select",
+                  "label": "Project type",
+                  "name": "project",
+                  "required": true,
+                  "options": "Website\nBranding\nOther",
+                  "placeholder": "Choose a project",
+                  "width": "half"
+                },
+                {
+                  "type": "text",
+                  "label": "What else?",
+                  "name": "otherProject",
+                  "required": true,
+                  "showIf": "project",
+                  "showIfOp": "eq",
+                  "showIfValue": "Other"
+                },
+                {
+                  "type": "radio",
+                  "label": "Do you have a deadline?",
+                  "name": "hasDeadline",
+                  "required": true,
+                  "options": "Yes\nNo"
+                },
+                {
+                  "type": "date",
+                  "label": "Deadline",
+                  "name": "deadline",
+                  "required": true,
+                  "min": "2026-01-01",
+                  "showIf": "hasDeadline",
+                  "showIfOp": "eq",
+                  "showIfValue": "Yes",
+                  "width": "half"
+                },
+                {
+                  "type": "time",
+                  "label": "Best time to call",
+                  "name": "callTime",
+                  "min": "09:00",
+                  "max": "18:00",
+                  "width": "half"
+                },
+                {
+                  "type": "checkbox",
+                  "label": "Services",
+                  "name": "services",
+                  "options": "Design\nDevelopment\nCopywriting",
+                  "default": "Design"
+                },
+                {
+                  "type": "number",
+                  "label": "Pages (about)",
+                  "name": "pages",
+                  "min": "1",
+                  "max": "200",
+                  "width": "third"
+                },
+                {
+                  "type": "text",
+                  "label": "ZIP code",
+                  "name": "zip",
+                  "format": "zip-us",
+                  "width": "third"
+                },
+                {
+                  "type": "file",
+                  "label": "Brief (PDF or image)",
+                  "name": "brief",
+                  "accept": "images-documents",
+                  "maxSizeMb": 5,
+                  "width": "third"
+                },
+                {
+                  "type": "textarea",
+                  "label": "Tell us about the project",
+                  "name": "message",
+                  "placeholder": "Goals, audience, examples you like…",
+                  "maxLength": 1500
+                },
+                {
+                  "type": "hidden",
+                  "label": "Campaign",
+                  "name": "campaign",
+                  "default": "demo-contact"
+                },
+                {
+                  "type": "acceptance",
+                  "label": "I agree that Demo Studio stores my request to answer it.",
+                  "name": "consent",
+                  "required": true,
+                  "link": "/legacy/",
+                  "linkText": "How we store data"
+                }
+              ],
+              "action": "webhook",
+              "formName": "Project request",
+              "submitLabel": "Send request",
+              "successMessage": "Thank you! We'll reply within one working day.",
+              "errorMessage": "Sending failed. Please try again or email hello@demo-studio.example.",
+              "labels": "above",
+              "requiredMark": true,
+              "buttonWidth": "auto",
+              "footnote": "We never share your details."
+            }
+          },
+          {
+            "id": "call-title",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Or ask for a call back",
+              "level": 2
+            }
+          },
+          {
+            "id": "call-form",
+            "type": "pro/Form",
+            "version": 1,
+            "props": {
+              "fields": [
+                {
+                  "type": "text",
+                  "label": "Name",
+                  "name": "name",
+                  "required": true,
+                  "width": "half"
+                },
+                {
+                  "type": "tel",
+                  "label": "Phone",
+                  "name": "phone",
+                  "required": true,
+                  "width": "half"
+                }
+              ],
+              "action": "email",
+              "formName": "Call back",
+              "submitLabel": "Call me back",
+              "redirect": "/thank-you/",
+              "labels": "hidden",
+              "requiredMark": false,
+              "buttonWidth": "full"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

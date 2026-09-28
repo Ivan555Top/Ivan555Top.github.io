@@ -1,0 +1,114 @@
+{
+  "schemaVersion": 2,
+  "id": "seo",
+  "path": "/seo/",
+  "title": "SEO and page settings",
+  "seo": {
+    "title": "SEO and page settings in the visual builder",
+    "description": "How a page gets its search title, description, social card and structured data: every setting of the Page Settings panel in one example page.",
+    "focusKeyword": "page settings",
+    "schema": "service",
+    "og": {
+      "title": "Page settings, shared",
+      "description": "The card people see when this page is shared."
+    },
+    "twitterCard": "summary_large_image"
+  },
+  "settings": {
+    "featuredImage": {
+      "src": "/images/uploads/demo/demo-3.png",
+      "alt": "A laptop showing the page editor",
+      "width": 1600,
+      "height": 1000
+    },
+    "cssClasses": [
+      "demo-muted"
+    ],
+    "customCss": "selector h2{letter-spacing:.02em}"
+  },
+  "root": [
+    {
+      "id": "seo-hero",
+      "type": "demo/Hero",
+      "version": 2,
+      "props": {
+        "title": "Page settings, the SEO way",
+        "subtitle": "Title, description, social card and structured data for every page.",
+        "ctaLabel": "All widgets",
+        "ctaLink": "/widgets/"
+      }
+    },
+    {
+      "id": "seo-box",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "seo-h2",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "What search engines read",
+              "level": 2
+            }
+          },
+          {
+            "id": "seo-t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "The SEO title and description become the search result; the social title, description and image become the card when the page is shared. Page settings are validated like the rest of the page."
+            }
+          },
+          {
+            "id": "seo-img",
+            "type": "base/Image",
+            "version": 1,
+            "props": {
+              "image": {
+                "src": "/images/uploads/demo/demo-1.png",
+                "alt": "A sample page layout",
+                "width": 1600,
+                "height": 1000
+              },
+              "size": "large"
+            }
+          },
+          {
+            "id": "seo-h3",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Questions",
+              "level": 3
+            }
+          },
+          {
+            "id": "seo-faq",
+            "type": "base/Accordion",
+            "version": 1,
+            "props": {
+              "items": [
+                {
+                  "title": "Does every page need an H1?",
+                  "body": "Yes: exactly one. The hero shows it here."
+                },
+                {
+                  "title": "Where do FAQ rich results come from?",
+                  "body": "From FAQ widgets like this one, automatically."
+                }
+              ],
+              "design": "lines",
+              "icon": "plus"
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

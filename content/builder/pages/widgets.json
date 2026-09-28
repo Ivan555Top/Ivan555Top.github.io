@@ -1,0 +1,1193 @@
+{
+  "schemaVersion": 2,
+  "id": "widgets",
+  "path": "/widgets/",
+  "title": "Widgets",
+  "seo": {
+    "description": "Every basic and pro widget of the builder."
+  },
+  "root": [
+    {
+      "id": "crumbs",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w1",
+            "type": "pro/Breadcrumbs",
+            "version": 1,
+            "props": {
+              "homeLabel": "Home",
+              "separator": "›"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "slides",
+      "type": "pro/Slides",
+      "version": 1,
+      "props": {
+        "slides": [
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-1.png",
+              "alt": "Purple gradient",
+              "width": 800,
+              "height": 600
+            },
+            "heading": "Slides with a button",
+            "text": "Background image, heading, text.",
+            "buttonLabel": "See layouts",
+            "buttonLink": "/layout/",
+            "align": "left"
+          },
+          {
+            "image": {
+              "src": "/images/uploads/demo/demo-3.png",
+              "alt": "Teal gradient",
+              "width": 800,
+              "height": 600
+            },
+            "heading": "Second slide",
+            "text": "Centered text.",
+            "align": "center"
+          }
+        ],
+        "height": "sm",
+        "overlay": true,
+        "autoplay": "off",
+        "loop": true,
+        "arrows": true,
+        "dots": true
+      }
+    },
+    {
+      "id": "toc",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w101",
+            "type": "pro/TableOfContents",
+            "version": 1,
+            "props": {
+              "title": "On this page",
+              "levels": "h2-h3",
+              "marker": "numbers",
+              "collapsible": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "headline",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w2",
+            "type": "pro/AnimatedHeadline",
+            "version": 1,
+            "props": {
+              "before": "We build",
+              "words": [
+                {
+                  "text": "websites"
+                },
+                {
+                  "text": "landing pages"
+                },
+                {
+                  "text": "shops"
+                }
+              ],
+              "after": "visually",
+              "style": "rotate",
+              "level": 1
+            }
+          },
+          {
+            "id": "w3",
+            "type": "pro/AnimatedHeadline",
+            "version": 1,
+            "props": {
+              "before": "Pages that",
+              "words": [
+                {
+                  "text": "convert"
+                }
+              ],
+              "after": "",
+              "style": "highlight",
+              "shape": "curly",
+              "level": 2
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "icons",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+          "gap": "32px"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w4",
+            "type": "base/Icon",
+            "version": 1,
+            "props": {
+              "icon": "sun",
+              "view": "default",
+              "shape": "circle",
+              "size": "lg"
+            }
+          },
+          {
+            "id": "w5",
+            "type": "base/Icon",
+            "version": 1,
+            "props": {
+              "icon": "snowflake",
+              "view": "stacked",
+              "shape": "circle",
+              "size": "lg"
+            }
+          },
+          {
+            "id": "w6",
+            "type": "base/Icon",
+            "version": 1,
+            "props": {
+              "icon": "phone",
+              "view": "framed",
+              "shape": "rounded",
+              "size": "lg",
+              "link": "tel:+15555550100",
+              "label": "Call us"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "boxes",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "3",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w7",
+            "type": "base/IconBox",
+            "version": 1,
+            "props": {
+              "icon": "shield",
+              "view": "stacked",
+              "shape": "circle",
+              "title": "Licensed",
+              "text": "Every job is done by trained staff.",
+              "position": "top",
+              "titleLevel": 3
+            }
+          },
+          {
+            "id": "w8",
+            "type": "base/IconBox",
+            "version": 1,
+            "props": {
+              "icon": "clock",
+              "view": "framed",
+              "shape": "circle",
+              "title": "On time",
+              "text": "We arrive in the window we promise.",
+              "position": "left",
+              "titleLevel": 3,
+              "link": "/layout/"
+            }
+          },
+          {
+            "id": "w9",
+            "type": "base/ImageBox",
+            "version": 1,
+            "props": {
+              "image": {
+                "src": "/images/uploads/demo/demo-1.png",
+                "alt": "Purple gradient",
+                "width": 800,
+                "height": 600
+              },
+              "title": "Design",
+              "text": "Pages built from your own blocks.",
+              "position": "top",
+              "ratio": "16:9",
+              "titleLevel": 3
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "lists",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "2",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w10",
+            "type": "base/IconList",
+            "version": 1,
+            "props": {
+              "items": [
+                {
+                  "icon": "check",
+                  "text": "Free estimates"
+                },
+                {
+                  "icon": "check",
+                  "text": "Same-day service"
+                },
+                {
+                  "icon": "pin",
+                  "text": "Our service area",
+                  "link": "/layout/"
+                }
+              ],
+              "layout": "list",
+              "dividers": true
+            }
+          },
+          {
+            "id": "w11",
+            "type": "base/TextEditor",
+            "version": 1,
+            "props": {
+              "content": [
+                {
+                  "t": "h3",
+                  "c": [
+                    {
+                      "text": "Formatted text"
+                    }
+                  ]
+                },
+                {
+                  "t": "p",
+                  "c": [
+                    {
+                      "text": "The Text editor keeps "
+                    },
+                    {
+                      "text": "bold",
+                      "b": true
+                    },
+                    {
+                      "text": ", "
+                    },
+                    {
+                      "text": "italic",
+                      "i": true
+                    },
+                    {
+                      "text": ", "
+                    },
+                    {
+                      "text": "links",
+                      "href": "/effects/"
+                    },
+                    {
+                      "text": " and lists — stored as data, never as HTML."
+                    }
+                  ]
+                },
+                {
+                  "t": "ol",
+                  "items": [
+                    [
+                      {
+                        "text": "Write"
+                      }
+                    ],
+                    [
+                      {
+                        "text": "Format"
+                      }
+                    ],
+                    [
+                      {
+                        "text": "Publish"
+                      }
+                    ]
+                  ]
+                },
+                {
+                  "t": "quote",
+                  "c": [
+                    {
+                      "text": "Quotes are supported too."
+                    }
+                  ]
+                }
+              ],
+              "columns": 1,
+              "dropCap": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "notices",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "2",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w12",
+            "type": "base/Alert",
+            "version": 1,
+            "props": {
+              "kind": "info",
+              "title": "Good to know",
+              "text": "Alerts come in four kinds."
+            }
+          },
+          {
+            "id": "w13",
+            "type": "base/Alert",
+            "version": 1,
+            "props": {
+              "kind": "warning",
+              "title": "Heads up",
+              "text": "This one is a warning."
+            }
+          },
+          {
+            "id": "w14",
+            "type": "base/StarRating",
+            "version": 1,
+            "props": {
+              "rating": 4.5,
+              "label": "4.5 of 5 on 120 reviews (sample)"
+            }
+          },
+          {
+            "id": "w15",
+            "type": "base/SocialIcons",
+            "version": 1,
+            "props": {
+              "items": [
+                {
+                  "network": "facebook",
+                  "link": "https://www.facebook.com/"
+                },
+                {
+                  "network": "instagram",
+                  "link": "https://www.instagram.com/"
+                },
+                {
+                  "network": "youtube",
+                  "link": "https://www.youtube.com/"
+                },
+                {
+                  "network": "yelp",
+                  "link": "https://www.yelp.com/"
+                }
+              ],
+              "colors": "brand",
+              "shape": "circle",
+              "size": "md"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "prices",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "3",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w16",
+            "type": "pro/PriceTable",
+            "version": 1,
+            "props": {
+              "title": "Basic",
+              "subtitle": "One visit",
+              "price": "$99",
+              "period": "/ visit",
+              "features": [
+                {
+                  "text": "Inspection",
+                  "included": true
+                },
+                {
+                  "text": "Report",
+                  "included": true
+                },
+                {
+                  "text": "Priority",
+                  "included": false
+                }
+              ],
+              "buttonLabel": "Choose",
+              "buttonLink": "/kitchen-sink/",
+              "featured": false
+            }
+          },
+          {
+            "id": "w17",
+            "type": "pro/PriceTable",
+            "version": 1,
+            "props": {
+              "title": "Plus",
+              "subtitle": "Two visits a year",
+              "price": "$179",
+              "originalPrice": "$198",
+              "period": "/ year",
+              "features": [
+                {
+                  "text": "Inspection",
+                  "included": true
+                },
+                {
+                  "text": "Report",
+                  "included": true
+                },
+                {
+                  "text": "Priority",
+                  "included": true
+                }
+              ],
+              "buttonLabel": "Choose",
+              "buttonLink": "/kitchen-sink/",
+              "note": "Cancel any time.",
+              "ribbon": "Popular",
+              "featured": true
+            }
+          },
+          {
+            "id": "w18",
+            "type": "pro/PriceList",
+            "version": 1,
+            "props": {
+              "items": [
+                {
+                  "title": "Consultation",
+                  "price": "$49",
+                  "description": "Thirty minutes."
+                },
+                {
+                  "title": "Page design",
+                  "price": "from $300",
+                  "description": "One page, two rounds of changes.",
+                  "image": {
+                    "src": "/images/uploads/demo/demo-2.png",
+                    "alt": "Orange gradient",
+                    "width": 800,
+                    "height": 600
+                  }
+                },
+                {
+                  "title": "Hosting",
+                  "price": "$10 / mo"
+                }
+              ],
+              "separator": "dotted"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "cta",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "2",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w19",
+            "type": "pro/CallToAction",
+            "version": 1,
+            "props": {
+              "title": "Ready to start?",
+              "text": "Tell us about your project.",
+              "buttonLabel": "Contact us",
+              "buttonLink": "/kitchen-sink/",
+              "image": {
+                "src": "/images/uploads/demo/demo-3.png",
+                "alt": "Teal gradient",
+                "width": 800,
+                "height": 600
+              },
+              "layout": "left",
+              "minHeight": "sm"
+            }
+          },
+          {
+            "id": "w20",
+            "type": "pro/CallToAction",
+            "version": 1,
+            "props": {
+              "title": "Summer offer",
+              "text": "Twenty percent off design work.",
+              "buttonLabel": "See the offer",
+              "buttonLink": "/effects/",
+              "image": {
+                "src": "/images/uploads/demo/demo-4.png",
+                "alt": "Pink gradient",
+                "width": 800,
+                "height": 600
+              },
+              "layout": "cover",
+              "ribbon": "New",
+              "minHeight": "sm"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "flip",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "3",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w21",
+            "type": "pro/FlipBox",
+            "version": 1,
+            "props": {
+              "icon": "sparkles",
+              "frontTitle": "Flip",
+              "frontText": "Hover or focus",
+              "backTitle": "The back",
+              "backText": "With a button.",
+              "buttonLabel": "Open",
+              "buttonLink": "/effects/",
+              "effect": "flip",
+              "direction": "left",
+              "height": "sm"
+            }
+          },
+          {
+            "id": "w22",
+            "type": "pro/FlipBox",
+            "version": 1,
+            "props": {
+              "icon": "wind",
+              "frontTitle": "Slide",
+              "backTitle": "Slides in",
+              "backText": "From the side.",
+              "effect": "slide",
+              "direction": "up",
+              "height": "sm"
+            }
+          },
+          {
+            "id": "w23",
+            "type": "pro/FlipBox",
+            "version": 1,
+            "props": {
+              "icon": "sun",
+              "frontTitle": "Fade",
+              "backTitle": "Fades in",
+              "backText": "Softly.",
+              "effect": "fade",
+              "direction": "left",
+              "height": "sm"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "stats",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "2",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w24",
+            "type": "pro/ProgressBar",
+            "version": 1,
+            "props": {
+              "items": [
+                {
+                  "label": "Design",
+                  "percent": 90
+                },
+                {
+                  "label": "Speed",
+                  "percent": 75
+                },
+                {
+                  "label": "Accessibility",
+                  "percent": 100
+                }
+              ],
+              "showPercent": true,
+              "thickness": "medium"
+            }
+          },
+          {
+            "id": "w25",
+            "type": "pro/Testimonial",
+            "version": 1,
+            "props": {
+              "quote": "Sample testimonial text for the demo site.",
+              "name": "Sample Customer",
+              "role": "Demo City",
+              "rating": 5,
+              "source": "Demo",
+              "layout": "card"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "hotspots",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "2",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w26",
+            "type": "pro/Hotspot",
+            "version": 1,
+            "props": {
+              "image": {
+                "src": "/images/uploads/builder/2026/09/sample-photo.png",
+                "alt": "Sample photo with points",
+                "width": 800,
+                "height": 600
+              },
+              "spots": [
+                {
+                  "x": 25,
+                  "y": 35,
+                  "label": "Left point",
+                  "text": "A note about this part."
+                },
+                {
+                  "x": 70,
+                  "y": 60,
+                  "label": "Right point",
+                  "text": "Another note.",
+                  "link": "/layout/"
+                }
+              ],
+              "marker": "number"
+            }
+          },
+          {
+            "id": "w27",
+            "type": "base/Map",
+            "version": 1,
+            "props": {
+              "provider": "google",
+              "address": "Los Angeles, CA",
+              "zoom": 10,
+              "height": "sm",
+              "title": "Map of Los Angeles"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "code",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w28",
+            "type": "pro/Code",
+            "version": 1,
+            "props": {
+              "language": "typescript",
+              "code": "import { defineWidget, f } from \"@builder/sdk\";\n\n// A site widget in a few lines\nexport const Hero = defineWidget({\n  type: \"acme/Hero\",\n  version: 1,\n  fields: { title: f.text({ label: \"Title\", required: true }) },\n});",
+              "lineNumbers": true,
+              "theme": "dark"
+            }
+          },
+          {
+            "id": "w29",
+            "type": "base/Html",
+            "version": 1,
+            "props": {
+              "code": "<p style=\"font-family:system-ui\">This HTML runs in a <b>sandboxed</b> frame.</p>",
+              "height": 80,
+              "title": "Sandboxed HTML sample"
+            }
+          },
+          {
+            "id": "w30",
+            "type": "site/Slot",
+            "version": 1,
+            "props": {
+              "name": "opening-hours"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "counters",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "3",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w102",
+            "type": "pro/Counter",
+            "version": 1,
+            "props": {
+              "end": 1500,
+              "start": 0,
+              "suffix": "+",
+              "decimals": 0,
+              "separator": "comma",
+              "duration": "2s",
+              "title": "Happy customers"
+            }
+          },
+          {
+            "id": "w103",
+            "type": "pro/Counter",
+            "version": 1,
+            "props": {
+              "end": 98.5,
+              "start": 0,
+              "suffix": "%",
+              "decimals": 1,
+              "separator": "comma",
+              "duration": "2s",
+              "title": "On-time visits"
+            }
+          },
+          {
+            "id": "w104",
+            "type": "pro/Counter",
+            "version": 1,
+            "props": {
+              "end": 24,
+              "prefix": "",
+              "suffix": "/7",
+              "decimals": 0,
+              "separator": "none",
+              "duration": "1s",
+              "title": "Phone support"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "more",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "style": {
+        "desktop": {
+          "display": "grid",
+          "gridColumns": "2",
+          "gap": "24px"
+        },
+        "tablet": {
+          "gridColumns": "2"
+        },
+        "mobile": {
+          "gridColumns": "1"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w105",
+            "type": "pro/Countdown",
+            "version": 1,
+            "props": {
+              "date": "2099-12-31",
+              "time": "23:59",
+              "timezone": "America/Los_Angeles",
+              "units": "days-seconds",
+              "labels": "full",
+              "expired": "message",
+              "expiredMessage": "Ended."
+            }
+          },
+          {
+            "id": "w106",
+            "type": "pro/Toggle",
+            "version": 1,
+            "props": {
+              "items": [
+                {
+                  "title": "Can several be open?",
+                  "text": "Yes — each item opens on its own."
+                },
+                {
+                  "title": "Does it need JavaScript?",
+                  "text": "No, it uses the browser's details element."
+                }
+              ],
+              "design": "cards",
+              "icon": "plus",
+              "openFirst": true
+            }
+          },
+          {
+            "id": "w107",
+            "type": "pro/ShareButtons",
+            "version": 1,
+            "props": {
+              "networks": [
+                {
+                  "network": "facebook"
+                },
+                {
+                  "network": "x"
+                },
+                {
+                  "network": "linkedin"
+                },
+                {
+                  "network": "whatsapp"
+                },
+                {
+                  "network": "email"
+                },
+                {
+                  "network": "copy"
+                }
+              ],
+              "labels": true,
+              "colors": "brand",
+              "shape": "rounded"
+            }
+          },
+          {
+            "id": "w108",
+            "type": "pro/Lottie",
+            "version": 1,
+            "props": {
+              "src": "/images/uploads/builder/lottie/2026/09/spinner.json",
+              "title": "Spinning square animation",
+              "play": "visible",
+              "loop": true,
+              "speed": "1",
+              "height": "sm"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "reviews",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w109",
+            "type": "pro/TestimonialCarousel",
+            "version": 1,
+            "props": {
+              "items": [
+                {
+                  "quote": "Sample testimonial one for the demo site.",
+                  "name": "Sample Customer A",
+                  "role": "Demo City",
+                  "rating": 5
+                },
+                {
+                  "quote": "Sample testimonial two for the demo site.",
+                  "name": "Sample Customer B",
+                  "role": "Demo Town",
+                  "rating": 4
+                },
+                {
+                  "quote": "Sample testimonial three for the demo site.",
+                  "name": "Sample Customer C",
+                  "role": "Demo Village"
+                }
+              ],
+              "perView": 2,
+              "perViewTablet": 1,
+              "autoplay": "off",
+              "arrows": true,
+              "dots": true
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "search",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w110",
+            "type": "pro/Search",
+            "version": 1,
+            "props": {
+              "placeholder": "Search the demo site",
+              "label": "Search the site",
+              "limit": 5
+            }
+          }
+        ]
+      }
+    },
+    {
+      "id": "glob1",
+      "type": "builder/Global",
+      "version": 1,
+      "props": {
+        "template": "offer-band"
+      }
+    },
+    {
+      "id": "glob2",
+      "type": "builder/Global",
+      "version": 1,
+      "props": {
+        "template": "offer-band",
+        "overrides": {
+          "ob-h": {
+            "text": "Autumn offer"
+          },
+          "ob-b": {
+            "label": "Claim it",
+            "link": "/effects/"
+          }
+        }
+      }
+    },
+    {
+      "id": "sitemap",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "w31",
+            "type": "pro/Sitemap",
+            "version": 1,
+            "props": {
+              "columns": 3,
+              "showGroupTitles": true
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

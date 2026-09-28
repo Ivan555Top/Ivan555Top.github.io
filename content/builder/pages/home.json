@@ -1,0 +1,101 @@
+{
+  "schemaVersion": 2,
+  "id": "home",
+  "path": "/",
+  "title": "Home",
+  "status": "published",
+  "seo": {
+    "title": "Demo Studio",
+    "description": "A neutral demo site built with the visual builder."
+  },
+  "root": [
+    {
+      "id": "hero",
+      "type": "demo/Hero",
+      "version": 2,
+      "props": {
+        "title": "Build pages visually",
+        "subtitle": "Every block on this page comes from the builder.",
+        "ctaLabel": "See all widgets",
+        "ctaLink": "/kitchen-sink/"
+      },
+      "style": {
+        "desktop": {
+          "background": "soft"
+        }
+      },
+      "meta": {
+        "label": "Main hero"
+      }
+    },
+    {
+      "id": "cols",
+      "type": "base/Columns",
+      "version": 1,
+      "props": {
+        "layout": "1-1-1",
+        "gap": "md",
+        "stackBelow": "mobile"
+      },
+      "slots": {
+        "col1": [
+          {
+            "id": "c1h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Fast",
+              "level": 2
+            }
+          },
+          {
+            "id": "c1t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Static pages, no editor code on the public site."
+            }
+          }
+        ],
+        "col2": [
+          {
+            "id": "c2h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Safe",
+              "level": 2
+            }
+          },
+          {
+            "id": "c2t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Only registered widgets; every page is validated before it is published."
+            }
+          }
+        ],
+        "col3": [
+          {
+            "id": "c3h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Reusable",
+              "level": 2
+            }
+          },
+          {
+            "id": "c3t",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "The same builder serves many sites."
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

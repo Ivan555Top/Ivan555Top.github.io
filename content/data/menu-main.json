@@ -1,0 +1,61 @@
+{
+  "items": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "Features",
+      "href": "/widgets/",
+      "mega": "features-mega"
+    },
+    {
+      "label": "Guides",
+      "children": [
+        {
+          "label": "Layout",
+          "href": "/layout/",
+          "icon": "list",
+          "description": "Containers, flex and grid, per device"
+        },
+        {
+          "label": "Effects",
+          "href": "/effects/",
+          "icon": "sparkles",
+          "description": "Hover states, motion and scroll effects"
+        },
+        {
+          "label": "Popups",
+          "children": [
+            {
+              "label": "On page load",
+              "href": "/popup-load/"
+            },
+            {
+              "label": "On scroll",
+              "href": "/popup-scroll/"
+            },
+            {
+              "label": "On exit intent",
+              "href": "/popup-exit/"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Blog",
+      "href": "/blog/"
+    },
+    {
+      "label": "Contact",
+      "href": "/contact/"
+    },
+    {
+      "label": "Docs",
+      "href": "https://example.com/docs/",
+      "icon": "external",
+      "newTab": true
+    }
+  ]
+}

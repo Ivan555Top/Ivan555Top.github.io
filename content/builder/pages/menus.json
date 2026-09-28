@@ -1,0 +1,193 @@
+{
+  "schemaVersion": 2,
+  "id": "menus",
+  "path": "/menus/",
+  "title": "Menus",
+  "seo": {
+    "description": "Nav Menu and Nested Menu widgets: dropdowns, mega menus and the menu button on phones."
+  },
+  "root": [
+    {
+      "id": "mn",
+      "type": "base/Container",
+      "version": 1,
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "section"
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "mn-h",
+            "type": "base/Heading",
+            "version": 1,
+            "props": {
+              "text": "Menus",
+              "level": 1
+            }
+          },
+          {
+            "id": "mn-t1",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "The main menu of the site (edited in the editor’s Menus view): dropdowns open on hover, Features opens a mega menu. Below tablet width the items fold into a menu button with a drill-down panel."
+            }
+          },
+          {
+            "id": "nav-main",
+            "type": "pro/NavMenu",
+            "version": 1,
+            "props": {
+              "menu": "main",
+              "layout": "horizontal",
+              "align": "start",
+              "openOn": "hover",
+              "indicator": true,
+              "burgerAt": "tablet",
+              "mobileStyle": "drill-down",
+              "toggleLabel": "Menu",
+              "label": "Main"
+            }
+          },
+          {
+            "id": "mn-t2",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "The same menu opening on click, centred; on phones the button opens an accordion."
+            }
+          },
+          {
+            "id": "nav-click",
+            "type": "pro/NavMenu",
+            "version": 1,
+            "props": {
+              "menu": "main",
+              "layout": "horizontal",
+              "align": "center",
+              "openOn": "click",
+              "indicator": true,
+              "burgerAt": "mobile",
+              "mobileStyle": "accordion",
+              "toggleLabel": "Menu",
+              "label": "Main (click)"
+            }
+          },
+          {
+            "id": "mn-t3",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "Footer links as a vertical menu, never folded:"
+            }
+          },
+          {
+            "id": "nav-footer",
+            "type": "pro/NavMenu",
+            "version": 1,
+            "props": {
+              "menu": "footer",
+              "layout": "vertical",
+              "align": "start",
+              "openOn": "hover",
+              "indicator": false,
+              "burgerAt": "never",
+              "mobileStyle": "drill-down",
+              "toggleLabel": "Menu",
+              "label": "Footer"
+            }
+          },
+          {
+            "id": "mn-t4",
+            "type": "base/Text",
+            "version": 1,
+            "props": {
+              "text": "A menu made in place (Nested Menu): each dropdown holds any widgets."
+            }
+          },
+          {
+            "id": "nav-nested",
+            "type": "pro/NestedMenu",
+            "version": 1,
+            "props": {
+              "items": [
+                {
+                  "label": "Services",
+                  "dropdown": true
+                },
+                {
+                  "label": "Team",
+                  "dropdown": true
+                },
+                {
+                  "label": "Contact",
+                  "link": "/contact/",
+                  "dropdown": false
+                }
+              ],
+              "layout": "horizontal",
+              "align": "start",
+              "openOn": "hover",
+              "indicator": true,
+              "burgerAt": "tablet",
+              "mobileStyle": "drill-down",
+              "toggleLabel": "Menu",
+              "label": "In place"
+            },
+            "slots": {
+              "drop0": [
+                {
+                  "id": "nn-s-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "What we do",
+                    "level": 3
+                  }
+                },
+                {
+                  "id": "nn-s-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "Design, build and care for small business sites."
+                  }
+                },
+                {
+                  "id": "nn-s-b",
+                  "type": "base/Button",
+                  "version": 1,
+                  "props": {
+                    "label": "Start a project",
+                    "link": "/contact/",
+                    "variant": "primary"
+                  }
+                }
+              ],
+              "drop1": [
+                {
+                  "id": "nn-t-h",
+                  "type": "base/Heading",
+                  "version": 1,
+                  "props": {
+                    "text": "Who we are",
+                    "level": 3
+                  }
+                },
+                {
+                  "id": "nn-t-t",
+                  "type": "base/Text",
+                  "version": 1,
+                  "props": {
+                    "text": "A small studio of designers and developers."
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
