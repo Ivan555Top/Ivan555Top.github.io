@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "4200bb4b141d08b1cdb5c4eefbb760c14df158f0",
-  "savedAt": "2026-09-28T13:57:29.264Z",
+  "savedAt": "2026-09-28T14:01:25.426Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -169,6 +169,20 @@
         "version": 1,
         "props": {
           "text": "Доработай Icon widget, потому что сейчас его основные настройки непонятны и слишком ограничены.\n1. Размер самой иконки. Сейчас Shape имеет только presets sm / md / lg / xl, а в Style нет очевидного отдельного точного размера самой SVG-иконки. Добавь в Style → Icon отдельный параметр Icon Size с ручным числовым вводом и единицами, прежде всего px. Например пользователь должен иметь возможность поставить 18, 24, 32, 47, 64 px и т.д. ↑ увеличивает на 1, ↓ уменьшает на 1. Presets sm/md/lg/xl можно оставить как быстрые варианты, но они не должны заменять точный ввод.\n2. Отдельно размер иконки и её контейнера. Не смешивай Icon Size с Width/Height внешнего box/shape. Пользователь должен независимо задавать размер самой иконки и размер её фона/контейнера. Например: Icon = 28 px, Shape/Box = 60×60 px.\n3. Цвет самой иконки. В Style → Icon добавь явно подписанный Icon Color. Не называй его Text colour, потому что для Icon widget это непонятно. Используй общий color picker Builder: Global / Saved Favorites / Recent / Custom + HEX/RGB/alpha."
+        }
+      },
+      {
+        "id": "Box-ed4a9aa1-5882-409d-8628-66dab905be3b",
+        "type": "base/IconBox",
+        "version": 1,
+        "props": {
+          "icon": "phone",
+          "view": "stacked",
+          "shape": "circle",
+          "title": "Licensed technicians",
+          "text": "Describe the benefit in one or two sentences.",
+          "position": "top",
+          "titleLevel": 3
         }
       },
       {
@@ -844,7 +858,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T13:57:29.264Z",
+    "updatedAt": "2026-09-28T14:01:25.426Z",
     "updatedBy": "Ivan555Top"
   }
 }
