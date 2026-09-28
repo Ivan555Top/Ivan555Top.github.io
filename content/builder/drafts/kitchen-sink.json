@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T12:02:39.115Z",
+  "savedAt": "2026-09-28T12:03:26.068Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -68,23 +68,6 @@
         "version": 1,
         "props": {
           "text": "Бордюр",
-          "level": 2
-        }
-      },
-      {
-        "id": "ext-40c318f8-86a9-492f-a5a1-d9ae1bd4931e",
-        "type": "base/Text",
-        "version": 1,
-        "props": {
-          "text": ""
-        }
-      },
-      {
-        "id": "ing-257692fc-fe69-4f3c-9efe-3e534419c0f9",
-        "type": "base/Heading",
-        "version": 1,
-        "props": {
-          "text": "Spacer",
           "level": 2
         }
       },
@@ -849,7 +832,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T12:02:39.115Z",
+    "updatedAt": "2026-09-28T12:03:26.068Z",
     "updatedBy": "Ivan555Top"
   }
 }
