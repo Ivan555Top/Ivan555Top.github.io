@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T11:10:21.369Z",
+  "savedAt": "2026-09-28T11:14:01.476Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -78,11 +78,16 @@
         "props": {
           "image": {
             "src": "/images/uploads/demo/demo-1.png",
-            "alt": "",
+            "alt": "HVAC technician installing an outdoor AC unit",
             "width": 800,
-            "height": 600
+            "height": 600,
+            "focal": {
+              "x": 50,
+              "y": 64
+            }
           },
-          "size": "full"
+          "size": "full",
+          "fit": "cover"
         }
       },
       {
@@ -518,7 +523,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T11:10:21.369Z",
+    "updatedAt": "2026-09-28T11:14:01.476Z",
     "updatedBy": "Ivan555Top"
   }
 }
