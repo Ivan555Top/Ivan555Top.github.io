@@ -18,6 +18,10 @@
       "folder": "Samples",
       "width": 200,
       "height": 200
+    },
+    "/images/uploads/demo/demo-1.png": {
+      "folder": "123",
+      "title": "название"
     }
   }
 }
