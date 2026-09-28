@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T11:04:12.662Z",
+  "savedAt": "2026-09-28T11:07:52.208Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -69,6 +69,18 @@
         "props": {
           "text": "Typography",
           "level": 2
+        }
+      },
+      {
+        "id": "age-275f3ee1-589c-463a-a812-fd5a39a2ed2e",
+        "type": "base/Image",
+        "version": 1,
+        "props": {
+          "image": {
+            "src": "",
+            "alt": ""
+          },
+          "size": "full"
         }
       },
       {
@@ -168,6 +180,23 @@
               "text": "We finish the job and explain it."
             }
           ]
+        }
+      },
+      {
+        "id": "ery-b3817b6b-d6cc-4536-8f55-ca6e819c2c62",
+        "type": "base/Gallery",
+        "version": 1,
+        "props": {
+          "images": [],
+          "layout": "grid",
+          "columns": 3,
+          "columnsTablet": 2,
+          "columnsMobile": 1,
+          "gap": "md",
+          "aspect": "landscape",
+          "hover": "zoom",
+          "captions": "none",
+          "lightbox": true
         }
       },
       {
@@ -487,7 +516,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T11:04:12.662Z",
+    "updatedAt": "2026-09-28T11:07:52.208Z",
     "updatedBy": "Ivan555Top"
   }
 }
