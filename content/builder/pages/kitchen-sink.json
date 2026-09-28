@@ -49,8 +49,15 @@
               "label": "Open the popup",
               "link": "#popup-hello",
               "variant": "primary",
-              "icon": "arrow",
-              "size": "lg"
+              "icon": "chevron",
+              "size": "lg",
+              "iconPosition": "after",
+              "fullWidth": "always"
+            },
+            "style": {
+              "desktop": {
+                "bgPosition": "center"
+              }
             }
           }
         ]
@@ -809,6 +816,6 @@
       }
     }
   ],
-  "updatedAt": "2026-09-28T12:10:05.525Z",
+  "updatedAt": "2026-09-28T12:12:32.940Z",
   "updatedBy": "Ivan555Top"
 }
