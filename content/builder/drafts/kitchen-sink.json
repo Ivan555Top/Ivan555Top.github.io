@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:20:58.936Z",
+  "savedAt": "2026-09-28T10:21:38.819Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -135,6 +135,15 @@
           "mobile": {
             "textSize": "md"
           }
+        }
+      },
+      {
+        "id": "ing-072b6baf-adb7-4f13-a0f7-6cea611e6254",
+        "type": "base/Heading",
+        "version": 1,
+        "props": {
+          "text": "Section hetyghfgnading",
+          "level": 1
         }
       },
       {
@@ -388,7 +397,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:20:58.936Z",
+    "updatedAt": "2026-09-28T10:21:38.819Z",
     "updatedBy": "Ivan555Top"
   }
 }
