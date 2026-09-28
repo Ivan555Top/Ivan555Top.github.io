@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T11:45:25.673Z",
+  "savedAt": "2026-09-28T11:46:11.902Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -252,7 +252,8 @@
                     "style": {
                       "desktop": {
                         "background": "#df8b8b",
-                        "gradientType": "linear"
+                        "gradientType": "linear",
+                        "elWidth": "70px"
                       }
                     }
                   }
@@ -732,7 +733,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T11:45:25.673Z",
+    "updatedAt": "2026-09-28T11:46:11.902Z",
     "updatedBy": "Ivan555Top"
   }
 }
