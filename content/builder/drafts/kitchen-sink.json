@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "bd16c5e83a89fd9b05f72b936aaabdaf95f7b999",
-  "savedAt": "2026-09-28T15:22:12.483Z",
+  "savedAt": "2026-09-28T15:23:45.118Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -129,11 +129,11 @@
             },
             {
               "network": "whatsapp",
-              "link": ""
+              "link": "https://wa.me/15551234567"
             }
           ],
-          "colors": "brand",
-          "shape": "circle",
+          "colors": "site",
+          "shape": "rounded",
           "size": "md"
         }
       },
@@ -892,7 +892,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T15:22:12.483Z",
+    "updatedAt": "2026-09-28T15:23:45.118Z",
     "updatedBy": "Ivan555Top"
   }
 }
