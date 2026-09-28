@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:50:05.806Z",
+  "savedAt": "2026-09-28T10:51:07.152Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -167,6 +167,16 @@
             "align": "right",
             "width": "normal"
           }
+        }
+      },
+      {
+        "id": "tml-bcd1292a-5202-4aa9-9367-d63fd4d3d7a5",
+        "type": "base/Html",
+        "version": 1,
+        "props": {
+          "code": "<p>Hello</p>",
+          "height": 200,
+          "title": "Embedded content"
         }
       },
       {
@@ -446,7 +456,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:50:05.805Z",
+    "updatedAt": "2026-09-28T10:51:07.152Z",
     "updatedBy": "Ivan555Top"
   }
 }
