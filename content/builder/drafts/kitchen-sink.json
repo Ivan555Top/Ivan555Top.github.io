@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T11:55:21.485Z",
+  "savedAt": "2026-09-28T11:57:22.536Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -198,7 +198,9 @@
                   "flexGrow": "1",
                   "flexBasis": "0%",
                   "flexDirection": "row",
-                  "alignItems": "center"
+                  "alignItems": "center",
+                  "minWidth": "300px",
+                  "minHeight": "200px"
                 },
                 "mobile": {
                   "flexBasis": "auto"
@@ -847,7 +849,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T11:55:21.485Z",
+    "updatedAt": "2026-09-28T11:57:22.536Z",
     "updatedBy": "Ivan555Top"
   }
 }
