@@ -99,7 +99,12 @@
       "type": "base/Text",
       "version": 1,
       "props": {
-        "text": "Ещё одна важная UX-правка: Spacer сейчас нельзя задать точным числом — в Content → Size доступны только preset-значения вроде small/medium/large. Для визуального Builder этого недостаточно.\nПеределай Spacer так, чтобы основной размер задавался точным числовым значением, например 40 px.\nНужны:\n- ручной ввод любого значения;\n- ↑ увеличивает на 1, ↓ уменьшает на 1;\n- удержание ↑/↓ продолжает изменение;\n- желательно Shift + ↑/↓ = ±10;\n- единицы px, %, em, rem, vh, vw там, где они корректны;\n- отдельные значения для Desktop / Tablet / Mobile;\n- понятное inheritance/reset для responsive;\n- изменение должно сразу отображаться на canvas.\nМожно оставить Small / Medium / Large как быстрые presets, но они не должны заменять ручной ввод. Например пользователь выбирает Large, видит соответствующее числовое значение и после этого может вручную изменить его.\nТакже проверь весь Builder на аналогичную проблему: если размер, толщина, расстояние, ширина, высота, radius, gap или другое CSS-значение сейчас задаётся только через presets small / medium / large, thin / medium / thick и т.п., там, где пользователю нужен точный контроль, добавь numeric input + units. Presets можно сохранить только как быстрые варианты.\nНе ломай существующие страницы: старые preset-значения должны корректно открываться и преобразовываться в новый контрол."
+        "text": "Ещё одна важная UX-правка: Spacer сейчас нельзя задать точрпрппрпным числом — в Content → Size доступнапраррапы только preset-значения вроде small/medium/large. Для визуального Builder этого недостаточно.\nПеределай Spacer так, чтобы основной размер задавался точным числовым значением, например 40 px.\nНужны:\n- ручной ввод любого значения;\n- ↑ увеличивает на 1, ↓ уменьшает на 1;\n- удержание ↑/↓ продолжает изменение;\n- желательно Shift + ↑/↓ = ±10;\n- единицы px, %, em, rem, vh, vw там, где они корректны;\n- отдельные значения для Desktop / Tablet / Mobile;\n- понятное inheritance/reset для responsive;\n- изменение должно сразу отображаться на canvas.\nМожно оставить Small / Medium / Large как быстрые presets, но они не должны заменять ручной ввод. Например пользователь выбирает Large, видит соответствующее числовое значение и после этого может вручную изменить его.\nТакже проверь весь Builder на аналогичную проблему: если размер, толщина, расстояние, ширина, высота, radius, gap или другое CSS-значение сейчас задаётся только через presets small / medium / large, thin / medium / thick и т.п., там, где пользователю нужен точный контроль, добавь numeric input + units. Presets можно сохранить только как быстрые варианты.\nНе ломай существующие страницы: старые preset-значения должны корректно открываться и преобразовываться в новый контрол."
+      },
+      "advanced": {
+        "hideOn": [
+          "mobile"
+        ]
       }
     },
     {
@@ -121,6 +126,19 @@
         "mobile": {
           "textSize": "20px"
         }
+      }
+    },
+    {
+      "id": "Map-d19cef73-475e-469a-bf0f-fc4b66036dca",
+      "type": "base/Map",
+      "version": 1,
+      "props": {
+        "provider": "google",
+        "zoom": 16,
+        "height": "md",
+        "title": "Map",
+        "lat": 34.0099,
+        "lng": -118.496
       }
     },
     {
@@ -171,6 +189,35 @@
       "version": 1,
       "props": {
         "text": "4. SVG fill/stroke. Для SVG-иконок корректно поддерживай fill и stroke. Если иконка контурная, пользователь должен иметь возможность изменить цвет обводки. Если SVG поддерживает fill — цвет заливки. Если архитектурно возможно, показывай понятные Fill Color и Stroke Color только тогда, когда конкретная SVG действительно поддерживает соответствующий тип. Добавь Stroke Width, если SVG позволяет безопасно его менять.\n5. Shape/фон. Для вариантов вроде circle/rounded/square отдельно дай Background Color, точные Width/Height, Border, Border Color и Border Radius. Размер Shape также должен иметь numeric Custom, а не только sm/md/lg/xl.\n6. Выбор иконок. Улучши Icon Picker. По нажатию на текущую иконку должна открываться нормальная библиотека иконок с визуальной сеткой, поиском по названию/ключевым словам и категориями. Пользователь не должен выбирать иконку только по названию из маленького dropdown. Добавь Recent/Favorites, если это разумно для текущей архитектуры.\n7. Responsive. Icon Size и размер Shape/Box должны поддерживать Desktop / Tablet / Mobile через общий responsive control Builder.\nВсе изменения должны сразу отображаться на canvas. Используй общие компоненты Builder для numeric controls, colors, responsive и border, которые сейчас дорабатываются, а не создавай отдельную несовместимую систему только для Icon. Сохрани обратную совместимость существующих Icon widgets, presets sm/md/lg/xl, undo/redo, Save Draft и Publish."
+      }
+    },
+    {
+      "id": "age-275f3ee1-589c-463a-a812-fd5a39a2ed2e",
+      "type": "base/Image",
+      "version": 1,
+      "props": {
+        "image": {
+          "src": "/images/uploads/demo/demo-1.png",
+          "alt": "HVAC technician installing an outdoor AC unit",
+          "width": 800,
+          "height": 600,
+          "focal": {
+            "x": 50,
+            "y": 64
+          }
+        },
+        "size": "full",
+        "fit": "cover"
+      },
+      "parts": {
+        "image": {
+          "style": {
+            "desktop": {
+              "border": "thick",
+              "borderColor": "#5a6496"
+            }
+          }
+        }
       }
     },
     {
@@ -391,35 +438,6 @@
       "version": 1,
       "props": {
         "size": "large"
-      }
-    },
-    {
-      "id": "age-275f3ee1-589c-463a-a812-fd5a39a2ed2e",
-      "type": "base/Image",
-      "version": 1,
-      "props": {
-        "image": {
-          "src": "/images/uploads/demo/demo-1.png",
-          "alt": "HVAC technician installing an outdoor AC unit",
-          "width": 800,
-          "height": 600,
-          "focal": {
-            "x": 50,
-            "y": 64
-          }
-        },
-        "size": "full",
-        "fit": "cover"
-      },
-      "parts": {
-        "image": {
-          "style": {
-            "desktop": {
-              "border": "thick",
-              "borderColor": "#5a6496"
-            }
-          }
-        }
       }
     },
     {
@@ -838,6 +856,6 @@
       }
     }
   ],
-  "updatedAt": "2026-09-28T13:49:43.303Z",
+  "updatedAt": "2026-09-28T15:11:17.953Z",
   "updatedBy": "Ivan555Top"
 }
