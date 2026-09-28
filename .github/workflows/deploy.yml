@@ -1,0 +1,60 @@
+# Builds the sandbox site from this repository and deploys it to GitHub Pages on every push to main,
+# including the commits the visual builder makes when you press Publish. Commits marked [skip ci] (media
+# details, saved colours, drafts) do not rebuild the site.
+#
+# Pages must use "GitHub Actions" as its source: Settings → Pages → Build and deployment → Source.
+name: Build and deploy the sandbox
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# A newer publish replaces a build still running (the editor treats the older one as superseded).
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      # builder-build-info (part of `npm run build`) writes out/_builder/build.json with this commit (GITHUB_SHA).
+      - run: npm run build
+        env:
+          NEXT_TELEMETRY_DISABLED: 1
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: out
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
+      # The deployment is done only when the public site serves this commit's build.
+      - name: The public site serves this commit
+        run: |
+          url="${{ steps.deployment.outputs.page_url }}_builder/build.json"
+          for i in $(seq 1 30); do
+            rev=$(curl -fsS -H 'Cache-Control: no-cache' "$url?t=$(date +%s)" | sed -n 's/.*"revision":"\([0-9a-f]*\)".*/\1/p' || true)
+            echo "attempt $i: site serves ${rev:-nothing}"
+            [ "$rev" = "$GITHUB_SHA" ] && exit 0
+            sleep 10
+          done
+          echo "The site does not serve $GITHUB_SHA after 5 minutes"; exit 1

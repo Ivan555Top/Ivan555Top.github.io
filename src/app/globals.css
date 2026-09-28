@@ -1,0 +1,32 @@
+/* Demo brand: the builder's neutral widgets read these variables (see @builder/components-base).
+   Colours, roles and the content width are set in Site Settings (content/builder/site-settings.json); these
+   are the fallbacks. */
+:root {
+  --demo-brand: #7c3aed;
+  --demo-soft: #f5f3ff;
+  --b-container: 72rem;
+  --b-heading-color: #111827;
+  --b-text-color: #374151;
+  --b-accent: var(--demo-brand);
+  --b-accent-text: #fff;
+  --b-radius: 10px;
+  --b-line: #e5e7eb;
+  --b-soft: var(--demo-soft);
+}
+* { box-sizing: border-box; }
+body { margin: 0; font-family: system-ui, sans-serif; color: var(--b-text-color); background: #fff; }
+a { color: inherit; }
+.demo-header, .demo-footer { display: flex; justify-content: space-between; align-items: center; max-width: 72rem; margin: 0 auto; padding: 1rem; }
+.demo-header nav { display: flex; gap: 1rem; }
+.demo-header strong { color: var(--demo-brand); }
+.demo-footer { border-top: 1px solid var(--b-line); margin-top: 3rem; font-size: 0.9rem; }
+.demo-hero { max-width: 72rem; margin: 0 auto; padding: var(--b-pt, 4rem) 1rem var(--b-pb, 3rem); }
+.demo-hero h1 { font-size: clamp(2rem, 5vw, 3.5rem); margin: 0 0 1rem; color: var(--b-heading-color); }
+.demo-btn { display: inline-block; margin-top: 1rem; padding: 0.8rem 1.4rem; border-radius: var(--b-radius); background: var(--b-accent); color: #fff; text-decoration: none; font-weight: 700; }
+.demo-news { max-width: 36rem; margin: 0 auto; padding: var(--b-pt, 2rem) 1rem var(--b-pb, 2rem); display: flex; gap: 0.5rem; align-items: end; flex-wrap: wrap; }
+.demo-news label { flex: 1 1 14rem; display: grid; gap: 0.25rem; font-weight: 600; }
+.demo-news input { font: inherit; padding: 0.7rem 0.9rem; border: 1px solid #cbd5e1; border-radius: 8px; background: #fff; color: inherit; outline: none; }
+.demo-news button { font: inherit; font-weight: 700; padding: 0.75rem 1.2rem; border: 0; border-radius: 8px; background: var(--b-accent); color: #fff; cursor: pointer; }
+/* Site classes offered in Advanced › CSS classes (builder.config.ts cssClasses) */
+.demo-card { background: #fff; border-radius: 16px; box-shadow: 0 8px 24px -12px rgba(15, 23, 42, 0.3); }
+.demo-muted { color: #64748b; }
