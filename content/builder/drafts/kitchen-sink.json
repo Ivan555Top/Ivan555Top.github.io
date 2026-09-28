@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T11:51:46.764Z",
+  "savedAt": "2026-09-28T11:55:21.485Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -196,7 +196,9 @@
               "style": {
                 "desktop": {
                   "flexGrow": "1",
-                  "flexBasis": "0%"
+                  "flexBasis": "0%",
+                  "flexDirection": "row",
+                  "alignItems": "center"
                 },
                 "mobile": {
                   "flexBasis": "auto"
@@ -845,7 +847,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T11:51:46.764Z",
+    "updatedAt": "2026-09-28T11:55:21.485Z",
     "updatedBy": "Ivan555Top"
   }
 }
