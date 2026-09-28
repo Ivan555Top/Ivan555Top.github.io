@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "87b7e488344f92bbb35ac3f80e199f1c346956ac",
-  "savedAt": "2026-09-28T12:11:16.339Z",
+  "savedAt": "2026-09-28T12:12:29.544Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -55,8 +55,10 @@
                 "label": "Open the popup",
                 "link": "#popup-hello",
                 "variant": "primary",
-                "icon": "arrow",
-                "size": "lg"
+                "icon": "chevron",
+                "size": "lg",
+                "iconPosition": "after",
+                "fullWidth": "always"
               },
               "style": {
                 "desktop": {
@@ -820,7 +822,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T12:11:16.339Z",
+    "updatedAt": "2026-09-28T12:12:29.544Z",
     "updatedBy": "Ivan555Top"
   }
 }
