@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:34:24.095Z",
+  "savedAt": "2026-09-28T10:37:46.239Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -150,7 +150,8 @@
             "fontFamily": "sans",
             "textSize": "55px",
             "border": "thin",
-            "borderColor": "ink"
+            "borderColor": "ink",
+            "textColor": "#c52b2b"
           }
         }
       },
@@ -405,7 +406,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:34:24.095Z",
+    "updatedAt": "2026-09-28T10:37:46.239Z",
     "updatedBy": "Ivan555Top"
   }
 }
