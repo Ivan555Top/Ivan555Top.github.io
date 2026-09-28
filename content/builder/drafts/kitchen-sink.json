@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T11:07:52.208Z",
+  "savedAt": "2026-09-28T11:10:21.369Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -77,8 +77,10 @@
         "version": 1,
         "props": {
           "image": {
-            "src": "",
-            "alt": ""
+            "src": "/images/uploads/demo/demo-1.png",
+            "alt": "",
+            "width": 800,
+            "height": 600
           },
           "size": "full"
         }
@@ -516,7 +518,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T11:07:52.208Z",
+    "updatedAt": "2026-09-28T11:10:21.369Z",
     "updatedBy": "Ivan555Top"
   }
 }
