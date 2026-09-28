@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "4200bb4b141d08b1cdb5c4eefbb760c14df158f0",
-  "savedAt": "2026-09-28T14:01:25.426Z",
+  "savedAt": "2026-09-28T14:05:46.765Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -183,6 +183,23 @@
           "text": "Describe the benefit in one or two sentences.",
           "position": "top",
           "titleLevel": 3
+        },
+        "parts": {
+          "text": {
+            "style": {
+              "desktop": {
+                "textColor": "#bd3232",
+                "fontFamily": "google:montserrat",
+                "textSize": "16px",
+                "fontWeight": "semibold",
+                "textTransform": "capitalize",
+                "marginTop": "0px",
+                "marginRight": "0px",
+                "marginBottom": "0px",
+                "marginLeft": "0px"
+              }
+            }
+          }
         }
       },
       {
@@ -858,7 +875,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T14:01:25.426Z",
+    "updatedAt": "2026-09-28T14:05:46.765Z",
     "updatedBy": "Ivan555Top"
   }
 }
