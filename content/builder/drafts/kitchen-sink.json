@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:48:55.907Z",
+  "savedAt": "2026-09-28T10:50:05.806Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -184,11 +184,14 @@
             "border": "medium",
             "borderColor": "#e51fd4",
             "textColor": "#c52b2b",
-            "background": "#3314d2",
+            "background": "#ddd6ff",
             "width": "full",
             "overflow": "hidden",
             "align": "center",
-            "typography": "text"
+            "typography": "text",
+            "textShadow": "sm",
+            "gradientType": "linear",
+            "gradientAngle": "105"
           }
         }
       },
@@ -443,7 +446,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:48:55.907Z",
+    "updatedAt": "2026-09-28T10:50:05.805Z",
     "updatedBy": "Ivan555Top"
   }
 }
