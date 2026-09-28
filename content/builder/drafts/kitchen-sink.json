@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:19:31.807Z",
+  "savedAt": "2026-09-28T10:20:58.936Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -69,6 +69,54 @@
         "props": {
           "text": "Typography",
           "level": 2
+        }
+      },
+      {
+        "id": "tor-c7976be3-9724-4ee4-bbf3-18011d02f616",
+        "type": "base/TextEditor",
+        "version": 1,
+        "props": {
+          "content": [
+            {
+              "t": "p",
+              "c": [
+                {
+                  "text": "Write "
+                },
+                {
+                  "text": "formatted",
+                  "b": true
+                },
+                {
+                  "text": " text here: "
+                },
+                {
+                  "text": "links",
+                  "href": "/"
+                },
+                {
+                  "text": ", lists and headings."
+                }
+              ]
+            },
+            {
+              "t": "ul",
+              "items": [
+                [
+                  {
+                    "text": "First point"
+                  }
+                ],
+                [
+                  {
+                    "text": "Second point"
+                  }
+                ]
+              ]
+            }
+          ],
+          "columns": 1,
+          "dropCap": false
         }
       },
       {
@@ -340,7 +388,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:19:31.807Z",
+    "updatedAt": "2026-09-28T10:20:58.936Z",
     "updatedBy": "Ivan555Top"
   }
 }
