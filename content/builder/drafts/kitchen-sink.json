@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:52:50.166Z",
+  "savedAt": "2026-09-28T11:04:12.662Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -144,6 +144,30 @@
         "props": {
           "text": "Section heading",
           "level": 2
+        }
+      },
+      {
+        "id": "ine-e6c058da-b6b4-4d59-94c5-86824b980ff7",
+        "type": "acme/Timeline",
+        "version": 2,
+        "props": {
+          "title": "How it works",
+          "layout": "vertical",
+          "numbered": true,
+          "steps": [
+            {
+              "title": "Tell us what you need",
+              "text": "Call or send the form."
+            },
+            {
+              "title": "Pick a time",
+              "text": "We confirm a visit."
+            },
+            {
+              "title": "Done",
+              "text": "We finish the job and explain it."
+            }
+          ]
         }
       },
       {
@@ -463,7 +487,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:52:50.166Z",
+    "updatedAt": "2026-09-28T11:04:12.662Z",
     "updatedBy": "Ivan555Top"
   }
 }
