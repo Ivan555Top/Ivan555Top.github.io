@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:51:07.152Z",
+  "savedAt": "2026-09-28T10:52:50.166Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -177,6 +177,11 @@
           "code": "<p>Hello</p>",
           "height": 200,
           "title": "Embedded content"
+        },
+        "style": {
+          "desktop": {
+            "gradientFrom": "#000000"
+          }
         }
       },
       {
@@ -200,8 +205,10 @@
             "align": "center",
             "typography": "text",
             "textShadow": "sm",
-            "gradientType": "linear",
-            "gradientAngle": "105"
+            "gradientType": "radial",
+            "gradientAngle": "360",
+            "gradientFrom": "#000000",
+            "gradientFromStop": "50"
           }
         }
       },
@@ -456,7 +463,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:51:07.152Z",
+    "updatedAt": "2026-09-28T10:52:50.166Z",
     "updatedBy": "Ivan555Top"
   }
 }
