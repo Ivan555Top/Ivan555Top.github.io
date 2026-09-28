@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "e131325797935061831cf5d71c3591a39becb0bb",
-  "savedAt": "2026-09-28T10:21:38.819Z",
+  "savedAt": "2026-09-28T10:22:39.149Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -142,7 +142,7 @@
         "type": "base/Heading",
         "version": 1,
         "props": {
-          "text": "Section hetyghfgnading",
+          "text": "Test",
           "level": 1
         }
       },
@@ -397,7 +397,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T10:21:38.819Z",
+    "updatedAt": "2026-09-28T10:22:39.149Z",
     "updatedBy": "Ivan555Top"
   }
 }
