@@ -139,6 +139,12 @@
         "title": "Map",
         "lat": 34.0099,
         "lng": -118.496
+      },
+      "style": {
+        "desktop": {
+          "elWidth": "700px",
+          "height": "400px"
+        }
       }
     },
     {
@@ -856,6 +862,6 @@
       }
     }
   ],
-  "updatedAt": "2026-09-28T15:11:17.953Z",
+  "updatedAt": "2026-09-28T15:20:55.061Z",
   "updatedBy": "Ivan555Top"
 }
