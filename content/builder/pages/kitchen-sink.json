@@ -73,6 +73,28 @@
       }
     },
     {
+      "id": "Box-64f86cbc-b45b-4fb5-80f8-d35d7688f04f",
+      "type": "base/IconBox",
+      "version": 1,
+      "props": {
+        "icon": "mail",
+        "view": "stacked",
+        "shape": "circle",
+        "title": "Licensed technicians",
+        "text": "Describe the benefit in one or two sentences.бльлоорорро",
+        "position": "top",
+        "titleLevel": 3
+      },
+      "style": {
+        "desktop": {
+          "gradientAngle": "45",
+          "textColor": "brand",
+          "background": "soft",
+          "gradientType": "linear"
+        }
+      }
+    },
+    {
       "id": "ext-2b41eb80-22f3-4530-b3fc-a72982f4d202",
       "type": "base/Text",
       "version": 1,
@@ -816,6 +838,6 @@
       }
     }
   ],
-  "updatedAt": "2026-09-28T12:12:32.940Z",
+  "updatedAt": "2026-09-28T13:49:43.303Z",
   "updatedBy": "Ivan555Top"
 }
