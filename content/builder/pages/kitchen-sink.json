@@ -108,6 +108,38 @@
       }
     },
     {
+      "id": "ons-76bd737f-408b-4c2e-9c6c-d09db490c4cc",
+      "type": "base/SocialIcons",
+      "version": 1,
+      "props": {
+        "items": [
+          {
+            "network": "facebook",
+            "link": "https://www.facebook.com/"
+          },
+          {
+            "network": "instagram",
+            "link": "https://www.instagram.com/"
+          },
+          {
+            "network": "whatsapp",
+            "link": "https://wa.me/15551234567"
+          }
+        ],
+        "colors": "site",
+        "shape": "rounded",
+        "size": "md"
+      },
+      "style": {
+        "desktop": {
+          "elWidth": "28px",
+          "textColor": "#c12727",
+          "bgSize": "cover",
+          "bgAttachment": "scroll"
+        }
+      }
+    },
+    {
       "id": "ing-b79413df-d2c4-4ad6-a7a5-19995f932e55",
       "type": "base/Heading",
       "version": 1,
@@ -862,6 +894,6 @@
       }
     }
   ],
-  "updatedAt": "2026-09-28T15:20:55.061Z",
+  "updatedAt": "2026-09-28T15:39:54.617Z",
   "updatedBy": "Ivan555Top"
 }
