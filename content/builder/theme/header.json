@@ -12,10 +12,104 @@
   ],
   "root": [
     {
-      "id": "site-header",
-      "type": "demo/SiteHeader",
+      "id": "header-bar",
+      "type": "base/Container",
       "version": 1,
-      "props": {}
+      "props": {
+        "contentWidth": "boxed",
+        "tag": "header"
+      },
+      "style": {
+        "desktop": {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "alignItems": "center",
+          "gap": "24px",
+          "paddingTop": "14px",
+          "paddingBottom": "14px",
+          "background": "#ffffff"
+        }
+      },
+      "states": {
+        "stuck": {
+          "desktop": {
+            "paddingTop": "6px",
+            "paddingBottom": "6px",
+            "shadow": "md"
+          }
+        }
+      },
+      "advanced": {
+        "sticky": "top",
+        "attributes": {
+          "data-part": "site-header"
+        }
+      },
+      "slots": {
+        "content": [
+          {
+            "id": "header-logo",
+            "type": "base/SiteLogo",
+            "version": 1,
+            "props": {
+              "kind": "image",
+              "image": {
+                "src": "/demo-logo.svg",
+                "alt": "Demo Studio",
+                "width": 180,
+                "height": 40
+              },
+              "text": "Demo Studio",
+              "size": "180px",
+              "link": "home"
+            },
+            "states": {
+              "stuck": {
+                "desktop": {
+                  "elWidth": "140px"
+                }
+              }
+            }
+          },
+          {
+            "id": "header-menu",
+            "type": "pro/NavMenu",
+            "version": 1,
+            "props": {
+              "menu": "main",
+              "layout": "horizontal",
+              "align": "center",
+              "openOn": "hover",
+              "indicator": true,
+              "burgerAt": "tablet",
+              "mobileStyle": "drill-down",
+              "mobilePanel": "side",
+              "toggleLabel": "Menu",
+              "label": "Header menu"
+            }
+          },
+          {
+            "id": "header-cta",
+            "type": "base/Button",
+            "version": 1,
+            "props": {
+              "label": "Get a quote",
+              "link": "/contact/",
+              "variant": "primary",
+              "size": "sm",
+              "shape": "rounded",
+              "icon": "none",
+              "iconPosition": "after",
+              "fullWidth": "no",
+              "newTab": false
+            },
+            "advanced": {
+              "hideOn": ["mobile"]
+            }
+          }
+        ]
+      }
     }
   ]
 }
