@@ -1,0 +1,112 @@
+{
+  "kind": "builder/draft",
+  "version": 1,
+  "basedOn": "d52791e57e0a17f2eecb0e3b05ce60d8fede8248",
+  "savedAt": "2026-09-29T17:03:30.960Z",
+  "savedBy": "Ivan555Top",
+  "page": {
+    "schemaVersion": 2,
+    "id": "header",
+    "path": "/",
+    "title": "Site header",
+    "seo": {},
+    "root": [
+      {
+        "id": "header-bar",
+        "type": "base/Container",
+        "version": 1,
+        "props": {
+          "contentWidth": "boxed",
+          "tag": "header"
+        },
+        "style": {
+          "desktop": {
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "alignItems": "center",
+            "gap": "24px",
+            "paddingTop": "0px",
+            "paddingBottom": "2px",
+            "background": "#ffffff"
+          }
+        },
+        "advanced": {
+          "sticky": "top",
+          "attributes": {
+            "data-part": "site-header"
+          }
+        },
+        "slots": {
+          "content": [
+            {
+              "id": "header-logo",
+              "type": "base/SiteLogo",
+              "version": 1,
+              "props": {
+                "kind": "image",
+                "image": {
+                  "src": "/demo-logo.svg",
+                  "alt": "Demo Studio",
+                  "width": 180,
+                  "height": 40
+                },
+                "text": "Demo Studio",
+                "size": "180px",
+                "link": "home"
+              }
+            },
+            {
+              "id": "header-menu",
+              "type": "pro/NavMenu",
+              "version": 1,
+              "props": {
+                "menu": "main",
+                "layout": "horizontal",
+                "align": "center",
+                "openOn": "hover",
+                "indicator": true,
+                "mobileStyle": "drill-down",
+                "mobilePanel": "side",
+                "toggleLabel": "Menu",
+                "label": "Header menu"
+              }
+            },
+            {
+              "id": "header-cta",
+              "type": "base/Button",
+              "version": 1,
+              "props": {
+                "label": "Get a quote",
+                "link": "/contact/",
+                "variant": "primary",
+                "size": "sm",
+                "shape": "rounded",
+                "icon": "none",
+                "iconPosition": "after",
+                "fullWidth": "no",
+                "newTab": false
+              },
+              "advanced": {
+                "hideOn": [
+                  "mobile"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ],
+    "updatedAt": "2026-09-29T17:03:30.960Z",
+    "updatedBy": "Ivan555Top"
+  },
+  "theme": {
+    "type": "header",
+    "conditions": [
+      {
+        "include": true,
+        "rule": "site"
+      }
+    ]
+  }
+}
