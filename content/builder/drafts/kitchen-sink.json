@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "0015b37ed268c23bd93e5648fac448f1c06081c7",
-  "savedAt": "2026-09-28T18:28:00.579Z",
+  "savedAt": "2026-09-29T07:21:49.422Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -157,7 +157,6 @@
         },
         "style": {
           "desktop": {
-            "elWidth": "28px",
             "textColor": "#c12727",
             "bgSize": "cover",
             "bgAttachment": "scroll"
@@ -919,7 +918,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-28T18:28:00.579Z",
+    "updatedAt": "2026-09-29T07:21:49.422Z",
     "updatedBy": "Ivan555Top"
   }
 }
