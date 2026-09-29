@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "afa30dba3a6058d8d81cfb01e38620e19578cd64",
-  "savedAt": "2026-09-29T09:39:03.456Z",
+  "savedAt": "2026-09-29T16:40:29.294Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -67,6 +67,62 @@
               }
             }
           ]
+        }
+      },
+      {
+        "id": "sel-0e8d1509-653b-433f-9fc0-f52b1b9cd666",
+        "type": "base/Carousel",
+        "version": 2,
+        "props": {
+          "slides": [
+            {
+              "image": {
+                "src": "/images/uploads/demo/demo-2.png",
+                "alt": "",
+                "width": 800,
+                "height": 600
+              }
+            },
+            {
+              "image": {
+                "src": "/images/uploads/demo/demo-4.png",
+                "alt": "",
+                "width": 800,
+                "height": 600
+              }
+            },
+            {
+              "image": {
+                "src": "/images/uploads/demo/demo-4.png",
+                "alt": "",
+                "width": 800,
+                "height": 600
+              }
+            },
+            {
+              "image": {
+                "src": "/images/uploads/demo/demo-4.png",
+                "alt": "",
+                "width": 800,
+                "height": 600
+              }
+            }
+          ],
+          "perView": 2,
+          "perViewTablet": 2,
+          "perViewMobile": 1,
+          "perMove": 1,
+          "aspect": "wide",
+          "captions": "overlay",
+          "speed": 400,
+          "autoplay": true,
+          "autoplayDelay": 5000,
+          "pauseOnHover": true,
+          "loop": true,
+          "drag": true,
+          "arrows": true,
+          "dots": true,
+          "gap": "md"
         }
       },
       {
@@ -217,24 +273,6 @@
             "elWidth": "700px",
             "height": "400px"
           }
-        }
-      },
-      {
-        "id": "Box-8935f727-d4bf-4860-bf95-98aa93fdf633",
-        "type": "base/ImageBox",
-        "version": 1,
-        "props": {
-          "image": {
-            "src": "/images/uploads/demo/demo-2.png",
-            "alt": "",
-            "width": 800,
-            "height": 600
-          },
-          "title": "Image box title",
-          "text": "Describe it in one or two sentences.",
-          "position": "right",
-          "ratio": "4:3",
-          "titleLevel": 3
         }
       },
       {
@@ -767,46 +805,6 @@
         }
       },
       {
-        "id": "car",
-        "type": "base/Carousel",
-        "version": 1,
-        "props": {
-          "slides": [
-            {
-              "image": {
-                "src": "/images/uploads/demo/demo-1.png",
-                "alt": "Slide 1"
-              },
-              "title": "Slide 1"
-            },
-            {
-              "image": {
-                "src": "/images/uploads/demo/demo-2.png",
-                "alt": "Slide 2"
-              },
-              "title": "Slide 2"
-            },
-            {
-              "image": {
-                "src": "/images/uploads/demo/demo-3.png",
-                "alt": "Slide 3"
-              },
-              "title": "Slide 3"
-            }
-          ],
-          "perView": 2,
-          "perViewTablet": 1,
-          "perViewMobile": 1,
-          "aspect": "wide",
-          "captions": "overlay",
-          "autoplay": "off",
-          "loop": true,
-          "arrows": true,
-          "dots": true,
-          "gap": "md"
-        }
-      },
-      {
         "id": "ner-ba118a70-e5ef-48db-b2bb-8034b4ade30b",
         "type": "base/Container",
         "version": 1,
@@ -1038,7 +1036,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-29T09:39:03.456Z",
+    "updatedAt": "2026-09-29T16:40:29.294Z",
     "updatedBy": "Ivan555Top"
   }
 }
