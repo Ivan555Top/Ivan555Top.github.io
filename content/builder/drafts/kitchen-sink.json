@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "afa30dba3a6058d8d81cfb01e38620e19578cd64",
-  "savedAt": "2026-09-29T07:52:14.033Z",
+  "savedAt": "2026-09-29T07:55:01.321Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -789,15 +789,80 @@
         }
       },
       {
+        "id": "ner-ba118a70-e5ef-48db-b2bb-8034b4ade30b",
+        "type": "base/Container",
+        "version": 1,
+        "props": {
+          "contentWidth": "full",
+          "tag": "div"
+        },
+        "style": {
+          "desktop": {
+            "flexDirection": "row"
+          },
+          "mobile": {
+            "flexDirection": "column"
+          }
+        },
+        "slots": {
+          "content": [
+            {
+              "id": "ner-2ac6bef5-6d30-4d4d-9e7c-874f054db22a",
+              "type": "base/Container",
+              "version": 1,
+              "props": {
+                "contentWidth": "full",
+                "tag": "div"
+              },
+              "style": {
+                "desktop": {
+                  "flexGrow": "2",
+                  "flexBasis": "0%"
+                },
+                "mobile": {
+                  "flexBasis": "auto"
+                }
+              },
+              "slots": {
+                "content": []
+              }
+            },
+            {
+              "id": "ner-43fe56e0-8aeb-4c13-8058-59455c041b64",
+              "type": "base/Container",
+              "version": 1,
+              "props": {
+                "contentWidth": "full",
+                "tag": "div"
+              },
+              "style": {
+                "desktop": {
+                  "flexGrow": "1",
+                  "flexBasis": "0%"
+                },
+                "mobile": {
+                  "flexBasis": "auto"
+                }
+              },
+              "slots": {
+                "content": []
+              }
+            }
+          ]
+        }
+      },
+      {
         "id": "Map-bc09890f-4b8e-4b71-bc91-98c881e5a297",
         "type": "base/Map",
         "version": 1,
         "props": {
           "provider": "google",
           "address": "Los Angeles, CA",
-          "zoom": 11,
-          "height": "md",
-          "title": "Map"
+          "zoom": 13,
+          "height": "454px",
+          "title": "Map",
+          "showLink": "hide",
+          "locate": "address"
         }
       },
       {
@@ -955,7 +1020,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-29T07:52:14.033Z",
+    "updatedAt": "2026-09-29T07:55:01.321Z",
     "updatedBy": "Ivan555Top"
   }
 }
