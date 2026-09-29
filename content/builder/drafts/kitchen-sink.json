@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "afa30dba3a6058d8d81cfb01e38620e19578cd64",
-  "savedAt": "2026-09-29T07:34:17.576Z",
+  "savedAt": "2026-09-29T07:52:14.033Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -789,6 +789,18 @@
         }
       },
       {
+        "id": "Map-bc09890f-4b8e-4b71-bc91-98c881e5a297",
+        "type": "base/Map",
+        "version": 1,
+        "props": {
+          "provider": "google",
+          "address": "Los Angeles, CA",
+          "zoom": 11,
+          "height": "md",
+          "title": "Map"
+        }
+      },
+      {
         "id": "acc",
         "type": "base/Accordion",
         "version": 1,
@@ -943,7 +955,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-29T07:34:17.576Z",
+    "updatedAt": "2026-09-29T07:52:14.033Z",
     "updatedBy": "Ivan555Top"
   }
 }
