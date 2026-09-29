@@ -115,6 +115,9 @@
           "paddingRight": "27px",
           "paddingBottom": "46px",
           "paddingLeft": "27px"
+        },
+        "tablet": {
+          "textSize": "17px"
         }
       },
       "advanced": {
@@ -148,10 +151,21 @@
       },
       "style": {
         "desktop": {
-          "elWidth": "28px",
           "textColor": "#c12727",
           "bgSize": "cover",
           "bgAttachment": "scroll"
+        }
+      },
+      "parts": {
+        "icon": {
+          "style": {
+            "desktop": {
+              "textColor": "#f0f0f0",
+              "background": "#d14040",
+              "borderStyle": "double",
+              "borderColor": "#26262a"
+            }
+          }
         }
       }
     },
@@ -910,6 +924,6 @@
       }
     }
   ],
-  "updatedAt": "2026-09-28T17:27:37.452Z",
+  "updatedAt": "2026-09-29T07:22:40.544Z",
   "updatedBy": "Ivan555Top"
 }
