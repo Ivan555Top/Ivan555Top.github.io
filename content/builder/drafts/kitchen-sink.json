@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "afa30dba3a6058d8d81cfb01e38620e19578cd64",
-  "savedAt": "2026-09-29T07:33:17.242Z",
+  "savedAt": "2026-09-29T07:34:17.576Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -880,6 +880,15 @@
                 "label": "Inside a panel",
                 "link": "/kitchen-sink/",
                 "variant": "primary"
+              },
+              "parts": {
+                "button": {
+                  "style": {
+                    "desktop": {
+                      "textColor": "#42da51"
+                    }
+                  }
+                }
               }
             }
           ],
@@ -934,7 +943,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-29T07:33:17.242Z",
+    "updatedAt": "2026-09-29T07:34:17.576Z",
     "updatedBy": "Ivan555Top"
   }
 }
