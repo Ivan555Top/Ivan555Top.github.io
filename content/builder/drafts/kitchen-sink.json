@@ -2,7 +2,7 @@
   "kind": "builder/draft",
   "version": 1,
   "basedOn": "afa30dba3a6058d8d81cfb01e38620e19578cd64",
-  "savedAt": "2026-09-29T07:55:01.321Z",
+  "savedAt": "2026-09-29T09:39:03.456Z",
   "savedBy": "Ivan555Top",
   "page": {
     "schemaVersion": 2,
@@ -217,6 +217,24 @@
             "elWidth": "700px",
             "height": "400px"
           }
+        }
+      },
+      {
+        "id": "Box-8935f727-d4bf-4860-bf95-98aa93fdf633",
+        "type": "base/ImageBox",
+        "version": 1,
+        "props": {
+          "image": {
+            "src": "/images/uploads/demo/demo-2.png",
+            "alt": "",
+            "width": 800,
+            "height": 600
+          },
+          "title": "Image box title",
+          "text": "Describe it in one or two sentences.",
+          "position": "right",
+          "ratio": "4:3",
+          "titleLevel": 3
         }
       },
       {
@@ -1020,7 +1038,7 @@
         }
       }
     ],
-    "updatedAt": "2026-09-29T07:55:01.321Z",
+    "updatedAt": "2026-09-29T09:39:03.456Z",
     "updatedBy": "Ivan555Top"
   }
 }
